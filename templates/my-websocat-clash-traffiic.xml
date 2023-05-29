@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>websocat-clash-trace</Name>
+  <Name>websocat-clash-traffiic</Name>
   <Repository>dyf991645/websocat:latest</Repository>
   <Registry>https://hub.docker.com/r/dyf991645/websocat</Registry>
   <Network>bridge</Network>
@@ -17,14 +17,14 @@ Will need to be placed into your Host Path 1 directory.</Overview>
   <Category>Tools:Utilities Network:Management</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/natcoso9955/unRAID-docker/master/grafana_loki_unraid.xml</TemplateURL>
-  <Icon>https://icon-library.com/images/small-cat-icon/small-cat-icon-1.jpg</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/websocat.jpg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1684293018</DateInstalled>
+  <DateInstalled>1684292981</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="PROXY_FROM" Target="PROXY_FROM" Default="ws://192.168.31.102:9090/traffic?token=123456" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">ws://192.168.31.102:9090/profile/tracing?token=123456</Config>
+  <Config Name="PROXY_FROM" Target="PROXY_FROM" Default="ws://192.168.31.102:9090/traffic?token=123456" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">ws://192.168.31.102:9090/traffic?token=123456</Config>
   <Config Name="PROXY_TO" Target="PROXY_TO" Default="172.17.0.1:9000" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">172.17.0.1:9000</Config>
 </Container>
