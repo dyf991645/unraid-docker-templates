@@ -13,11 +13,11 @@
   <Category>Network: Network:DNS</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/docker-template/adguard_home.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/adguard.png</Icon>
+  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/adguard-home.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1668428471</DateInstalled>
+  <DateInstalled>1685341739</DateInstalled>
   <DonateText>If you like it, then consider buying me a soda as I don&amp;amp;#39;t like beer :P</DonateText>
   <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
   <Requires/>

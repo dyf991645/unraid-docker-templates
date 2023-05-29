@@ -17,11 +17,11 @@ https://hub.docker.com/r/p3terx/ariang/</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:6880]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/P3TERX/unraid-docker-templates/master/P3TERX/icons/AriaNg.png</Icon>
+  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/ariang.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1685069178</DateInstalled>
+  <DateInstalled>1685344337</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

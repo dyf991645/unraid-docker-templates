@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>aMule</Name>
+  <Name>amule</Name>
   <Repository>tchabaud/amule</Repository>
   <Registry>https://hub.docker.com/r/tchabaud/amule</Registry>
   <Network>bridge</Network>
@@ -17,11 +17,11 @@ VERSION&#xD;
   <Category>Downloaders: Productivity: Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:4711]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/aMule.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/amule.png</Icon>
+  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/amule.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1682562188</DateInstalled>
+  <DateInstalled>1685341807</DateInstalled>
   <DonateText>If you like my work, please consider making a little donation.</DonateText>
   <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>

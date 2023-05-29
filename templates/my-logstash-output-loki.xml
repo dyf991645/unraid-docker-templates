@@ -13,11 +13,11 @@
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/logstash.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1685331055</DateInstalled>
+  <DateInstalled>1685344773</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

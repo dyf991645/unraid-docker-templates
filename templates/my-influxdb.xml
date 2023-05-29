@@ -13,11 +13,11 @@
   <Category>Network:Management Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:8083]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/atribe/unRAID-docker/master/influxdb.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/pootzko/InfluxData.Net/master/nuget-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/influxdb.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1684380901</DateInstalled>
+  <DateInstalled>1685344709</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

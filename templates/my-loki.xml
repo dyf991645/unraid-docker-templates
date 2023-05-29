@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>websocat-clash-traffiic</Name>
-  <Repository>******/websocat:latest</Repository>
-  <Registry>https://hub.docker.com/r/******/websocat</Registry>
+  <Name>loki</Name>
+  <Repository>grafana/loki</Repository>
+  <Registry>https://hub.docker.com/r/grafana/loki/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
@@ -15,16 +15,17 @@ Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation 
 Download the local-config.yaml file from https://github.com/natcoso9955/unRAID-docker/blob/master/configs/loki/local-config.yaml before you start the container.&#xD;
 Will need to be placed into your Host Path 1 directory.</Overview>
   <Category>Tools:Utilities Network:Management</Category>
-  <WebUI/>
+  <WebUI>http://[IP]:[PORT:3100]/metrics</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/natcoso9955/unRAID-docker/master/grafana_loki_unraid.xml</TemplateURL>
-  <Icon>https://icon-library.com/images/small-cat-icon/small-cat-icon-1.jpg</Icon>
+  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/loki.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1684292981</DateInstalled>
+  <DateInstalled>1685344750</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="PROXY_FROM" Target="PROXY_FROM" Default="ws://192.168.31.102:9090/traffic?token=123456" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">ws://192.168.31.102:9090/traffic?token=123456</Config>
-  <Config Name="PROXY_TO" Target="PROXY_TO" Default="172.17.0.1:9000" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">172.17.0.1:9000</Config>
+  <Config Name="Web Port" Target="3100" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3100</Config>
+  <Config Name="Host Path 1" Target="/etc/loki" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/loki/conf/</Config>
+  <Config Name="Host Path 2" Target="/loki" Default="/mnt/user/appdata/loki/data/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/loki/data/</Config>
 </Container>

@@ -20,7 +20,7 @@ VERSION&#xD;
   <Category>Cloud: Tools:Utilities Network:Other</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/VLMCSD-KMS-Server.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/VLMCSD-KMS-Server_200x200.png</Icon>
+  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/vlmcsd-kms-server.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

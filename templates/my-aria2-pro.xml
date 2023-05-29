@@ -30,11 +30,11 @@ License&#xD;
   <Category>Downloaders:</Category>
   <WebUI>http://ariang.mayswind.net/latest/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/justin-himself/unraid-templates/master/aria2-pro/aria2-pro.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/P3TERX/unraid-docker-templates/master/P3TERX/icons/Aria2-Pro.png</Icon>
+  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/aria2-pro.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1685069229</DateInstalled>
+  <DateInstalled>1685344283</DateInstalled>
   <DonateText>You are rich huh? Help people in need!</DonateText>
   <DonateLink>https://bit.ly/3zAjqUx</DonateLink>
   <Requires>Additional WEBUI is required, read the README for details.</Requires>

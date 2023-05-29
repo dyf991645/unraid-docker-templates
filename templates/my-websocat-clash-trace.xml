@@ -17,7 +17,7 @@ Will need to be placed into your Host Path 1 directory.</Overview>
   <Category>Tools:Utilities Network:Management</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/natcoso9955/unRAID-docker/master/grafana_loki_unraid.xml</TemplateURL>
-  <Icon>https://icon-library.com/images/small-cat-icon/small-cat-icon-1.jpg</Icon>
+  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/websocat.jpg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
