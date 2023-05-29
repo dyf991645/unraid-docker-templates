@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>xunlei</Name>
+  <Repository>cnk3x/xunlei</Repository>
+  <Registry>https://hub.docker.com/r/cnk3x/xunlei/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://hub.docker.com/r/cnk3x/xunlei/</Support>
+  <Project/>
+  <Overview>&#x8FC5;&#x96F7;&#x8FDC;&#x7A0B;&#x4E0B;&#x8F7D; &#xD;
+https://github.com/cnk3x/xunlei&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/cnk3x/xunlei/</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:2345]</WebUI>
+  <TemplateURL/>
+  <Icon>https://img2.baidu.com/it/u=2564062564,3847647695&amp;amp;fm=253&amp;amp;fmt=auto&amp;amp;app=138&amp;amp;f=PNG?w=500&amp;amp;h=500</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1682499331</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Path 1" Target="/xunlei/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/thunder/</Config>
+  <Config Name="Container Path 2" Target="/xunlei/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/download/complete/</Config>
+  <Config Name="Container Variable 1" Target="XL_WEB_PORT" Default="2345" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">2345</Config>
+  <Config Name="Container Variable 2" Target="XL_DEBUG" Default="0" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="web port" Target="2345" Default="2345" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2345</Config>
+  <Config Name="debug" Target="XL_DEBUG" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+</Container>

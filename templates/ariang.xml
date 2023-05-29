@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ariang</Name>
+  <Repository>p3terx/ariang</Repository>
+  <Registry>https://hub.docker.com/r/p3terx/ariang/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/p3terx/ariang/</Support>
+  <Project/>
+  <Overview>AriaNg Docker image | A modern web frontend making aria2 easier to use | Aria2 WebUI&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/p3terx/ariang/</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:6880]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/P3TERX/unraid-docker-templates/master/P3TERX/icons/AriaNg.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1685069178</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Port 1" Target="6880" Default="6880" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6880</Config>
+  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+</Container>
