@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>transmission</Name>
+  <Repository>ghcr.io/linuxserver/transmission</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/transmission</Registry>
+  <Network>br0</Network>
+  <MyIP>192.168.31.111</MyIP>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-transmission/issues/new/choose</Support>
+  <Project>https://www.transmissionbt.com/</Project>
+  <Overview>Transmission(https://www.transmissionbt.com/) is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, &#xB5;TP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:9091]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/transmission.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683858238</DateInstalled>
+  <DonateText>Donations</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="9091" Default="9091" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false">9091</Config>
+  <Config Name="Port: 51413" Target="51413" Default="51413" Mode="tcp" Description="Torrent Port TCP" Type="Port" Display="always" Required="true" Mask="false">51413</Config>
+  <Config Name="Port: 51413" Target="51413" Default="51413" Mode="udp" Description="Torrent Port UDP" Type="Port" Display="always" Required="true" Mask="false">51413</Config>
+  <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Local path for downloads." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/download/</Config>
+  <Config Name="Path: /watch" Target="/watch" Default="" Mode="rw" Description="Watch folder for torrent files." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/download/watch/</Config>
+  <Config Name="USER" Target="USER" Default="username" Mode="{3}" Description="Specify an optional username for the interface" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="PASS" Target="PASS" Default="password" Mode="{3}" Description="Specify an optional password for the interface" Type="Variable" Display="always" Required="false" Mask="true">******</Config>
+  <Config Name="PEERPORT" Target="PEERPORT" Default="peerport" Mode="{3}" Description="Specify an optional port for torrent TCP/UDP connections. Fills peer-port setting." Type="Variable" Display="always" Required="false" Mask="false">51413</Config>
+  <Config Name="TRANSMISSION_WEB_HOME" Target="TRANSMISSION_WEB_HOME" Default="/config/flood-for-transmission" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config/web-ui/home</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/transmission" Mode="rw" Description="Where transmission should store config files and logs." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/transmission</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

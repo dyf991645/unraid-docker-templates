@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>websocat-clash-traffiic</Name>
+  <Repository>******/websocat:latest</Repository>
+  <Registry>https://hub.docker.com/r/******/websocat</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/94021-support-natcoso9955-loki/</Support>
+  <Project>https://grafana.com/oss/loki/</Project>
+  <Overview>Loki: like Prometheus, but for logs.&#xD;
+Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system inspired by Prometheus. It is designed to be very cost effective and easy to operate. It does not index the contents of the logs, but rather a set of labels for each log stream.&#xD;
+&#xD;
+Download the local-config.yaml file from https://github.com/natcoso9955/unRAID-docker/blob/master/configs/loki/local-config.yaml before you start the container.&#xD;
+Will need to be placed into your Host Path 1 directory.</Overview>
+  <Category>Tools:Utilities Network:Management</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/natcoso9955/unRAID-docker/master/grafana_loki_unraid.xml</TemplateURL>
+  <Icon>https://icon-library.com/images/small-cat-icon/small-cat-icon-1.jpg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1684292981</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="PROXY_FROM" Target="PROXY_FROM" Default="ws://192.168.31.102:9090/traffic?token=123456" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">ws://192.168.31.102:9090/traffic?token=123456</Config>
+  <Config Name="PROXY_TO" Target="PROXY_TO" Default="172.17.0.1:9000" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">172.17.0.1:9000</Config>
+</Container>

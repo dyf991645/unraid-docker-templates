@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>vector</Name>
+  <Repository>timberio/vector:latest-alpine</Repository>
+  <Registry>https://hub.docker.com/r/timberio/vector/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/94021-support-natcoso9955-loki/</Support>
+  <Project>https://grafana.com/oss/loki/</Project>
+  <Overview>Vector is a high-performance, end-to-end (agent &amp;amp; aggregator) observability&#xD;
+    data pipeline that puts you in control of your observability data. Collect, transform, and&#xD;
+    route all your logs, metrics, and traces to any vendors you want today and any other vendors&#xD;
+    you may want tomorrow. Vector enables dramatic cost reduction, novel data enrichment, and&#xD;
+    data security where you need it, not where it is most convenient for your vendors.&#xD;
+    Additionally, it is open source and up to 10x faster than every alternative in the space.</Overview>
+  <Category>Tools:Utilities Network:Management</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/natcoso9955/unRAID-docker/master/grafana_loki_unraid.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/coreylane/unraid-ca-templates/master/images/vector.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1684916375</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="socket port" Target="9000" Default="9000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9000</Config>
+  <Config Name="Configuration Directory" Target="/etc/vector" Default="/mnt/user/appdata/vector" Mode="rw" Description="Place your vector.toml in this directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/vector</Config>
+</Container>

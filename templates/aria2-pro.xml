@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>aria2-pro</Name>
+  <Repository>p3terx/aria2-pro</Repository>
+  <Registry>https://hub.docker.com/r/p3terx/aria2-pro</Registry>
+  <Network>br0</Network>
+  <MyIP>192.168.31.112</MyIP>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/P3TERX/Aria2-Pro-Docker</Project>
+  <Overview>A perfect Aria2 Docker image. Out of the box, just add download tasks and don't need to think about anything else.&#xD;
+&#xD;
+Features&#xD;
+  - Supported platforms: amd64, i386, arm64, arm/v7, arm/v6&#xD;
+  - Full Function: Async DNS, BitTorrent, Firefox3 Cookie, GZip, HTTPS, Message Digest, Metalink, XML-RPC, SFTP&#xD;
+  - max-connection-per-server unlimited.&#xD;
+  - retry on slow speed (lowest-speed-limit) and connection close&#xD;
+  - High BT download rate and speed&#xD;
+  - Get BitTorrent tracker automatically&#xD;
+  - Download error automatically delete files&#xD;
+  - Download cancel automatically delete files&#xD;
+  - Automatically clear .aria2 suffix files&#xD;
+  - Automatically clear .torrent suffix files&#xD;
+  - No lost task progress, no repeated downloads&#xD;
+  - And more powerful features&#xD;
+&#xD;
+License&#xD;
+  MIT &#xA9; P3TERX</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI>http://ariang.mayswind.net/latest/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/justin-himself/unraid-templates/master/aria2-pro/aria2-pro.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/P3TERX/unraid-docker-templates/master/P3TERX/icons/Aria2-Pro.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1685069229</DateInstalled>
+  <DonateText>You are rich huh? Help people in need!</DonateText>
+  <DonateLink>https://bit.ly/3zAjqUx</DonateLink>
+  <Requires>Additional WEBUI is required, read the README for details.</Requires>
+  <Config Name="RPC Secret" Target="RPC_SECRET" Default="" Mode="" Description="Set RPC secret authorization token." Type="Variable" Display="always" Required="true" Mask="true">******</Config>
+  <Config Name="Download Location" Target="/downloads" Default="" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/download/complete/</Config>
+  <Config Name="Config Location" Target="/config" Default="/mnt/user/appdata/aria2-pro" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/aria2-pro</Config>
+  <Config Name="IPv6 Mode" Target="IPV6_MODE" Default="true" Mode="" Description="Whether to enable IPv6 support for Aria2. Optional: true or false. Set the options disable-ipv6=false and enable-dht6=true in the configuration file(aria2.conf)." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="RPC Port" Target="RPC_PORT" Default="6800" Mode="" Description="Set RPC listen port." Type="Variable" Display="always" Required="false" Mask="false">6800</Config>
+  <Config Name="Listen Port" Target="LISTEN_PORT" Default="6888" Mode="" Description="Set TCP/UDP port number for BitTorrent/DHT listen." Type="Variable" Display="always" Required="false" Mask="false">6888</Config>
+  <Config Name="RPC Port Bind" Target="6800" Default="6800" Mode="tcp" Description="bind RPC listen port." Type="Port" Display="always" Required="false" Mask="false">6800</Config>
+  <Config Name="Listen Port Bind / TCP" Target="6888" Default="6888" Mode="tcp" Description="Bind BT listen port (TCP)." Type="Port" Display="always" Required="false" Mask="false">6888</Config>
+  <Config Name="Listen Port Bind / UDP" Target="6888" Default="6888" Mode="udp" Description="Bind BT listen port (UDP)." Type="Port" Display="always" Required="false" Mask="false">6888</Config>
+</Container>

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>telegraf</Name>
+  <Repository>******/telegraf:latest</Repository>
+  <Registry>https://hub.docker.com/_/telegraf/</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/index.php?topic=51498.0</Support>
+  <Project>https://github.com/influxdata/telegraf</Project>
+  <Overview>Telegraf gathers metrics from your system and sends them to an InfluxDB server for storage. From InfluxDB you would typically use something like Grafana to plot the data.&#xD;
+&#xD;
+    Both Grafana and Influxdb are available through Community Apps&#xD;
+&#xD;
+    &#xD;
+&#xD;
+    This version of telegraf requires you to manually place a config file at /mnt/user/appdata/telegraf/telegraf.conf The container will not start without it.&#xD;
+&#xD;
+    &#xD;
+&#xD;
+    The default telegraf.conf file can be downloaded at https://github.com/influxdata/telegraf/blob/master/etc/telegraf.conf. If you would prefer not to use a config file you can search for untelegraf in community apps for a version that only uses environment variables.&#xD;
+&#xD;
+    &#xD;
+&#xD;
+    Configuration&#xD;
+&#xD;
+    Container Volumes:&#xD;
+&#xD;
+    /var/run/docker.sock Read Only. Location of your docker socket.&#xD;
+&#xD;
+    /var/run/utmp Read Only. Location of your utmp file.&#xD;
+&#xD;
+    /run/udev Read Only. Allows you to identify devices based on their properties, like vendor ID and device ID&#xD;
+&#xD;
+    /rootfs Read Only. To be mapped to the root of the host file system. This is so the disk usage reported will be that of the host system.&#xD;
+&#xD;
+    /rootfs/etc Read Only. To be mapped to the etc of the host file system. This is so the disk usage reported will be that of the host system.&#xD;
+&#xD;
+    /rootfs/proc Read Only. To be mapped to the proc of the host file system. This is so the disk usage reported will be that of the host system.&#xD;
+&#xD;
+    /rootfs/sys Read Only. To be mapped to the sys of the host file system. This is so the disk usage reported will be that of the host system.&#xD;
+&#xD;
+    &#xD;
+&#xD;
+    Environment Variables:&#xD;
+&#xD;
+    HOST_MOUNT_PREFIX Name of container volume mapping of the root file system.&#xD;
+&#xD;
+    HOST_ETC Name of the etc volume mapping of the root file system.&#xD;
+&#xD;
+    HOST_PROC Name of the proc volume mapping of the root file system.&#xD;
+&#xD;
+    HOST_SYS Name of the sys volume mapping of the root file sytem.&#xD;
+</Overview>
+  <Category>Tools:Utilities</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/atribe/unRAID-docker/master/telegraf.xml</TemplateURL>
+  <Icon>https://github.com/atribe/unRAID-docker/raw/master/icons/telegraf.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1684733641</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Path 2" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="Host Path 3" Target="/rootfs" Default="/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/</Config>
+  <Config Name="Host Path 4" Target="/rootfs/sys" Default="/sys" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/sys</Config>
+  <Config Name="Host Path 5" Target="/rootfs/etc" Default="/etc" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/etc</Config>
+  <Config Name="Host Path 6" Target="/rootfs/proc" Default="/proc" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/proc</Config>
+  <Config Name="Host Path 7" Target="/etc/telegraf/telegraf.conf" Default="/mnt/user/appdata/telegraf/telegraf.conf" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/telegraf/telegraf.conf</Config>
+  <Config Name="Host Path 8" Target="/run/udev" Default="/run/udev" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/run/udev</Config>
+  <Config Name="Key 1" Target="HOST_PROC" Default="/rootfs/proc" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/rootfs/proc</Config>
+  <Config Name="Key 2" Target="HOST_SYS" Default="/rootfs/sys" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/rootfs/sys</Config>
+  <Config Name="Key 3" Target="HOST_ETC" Default="/rootfs/etc" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/rootfs/etc</Config>
+  <Config Name="Key 4" Target="HOST_MOUNT_PREFIX" Default="/rootfs" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/rootfs</Config>
+  <Config Name="Host Path 9" Target="/var/run/libvirt" Default="/var/run/libvirt" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/libvirt</Config>
+  <Config Name="Host Path 10" Target="/var/run/php5-fpm.sock" Default="/var/run/php5-fpm.sock" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/php5-fpm.sock</Config>
+</Container>
