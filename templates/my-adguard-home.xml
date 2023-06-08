@@ -17,12 +17,12 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1685341739</DateInstalled>
+  <DateInstalled>1686193637</DateInstalled>
   <DonateText>If you like it, then consider buying me a soda as I don&amp;amp;#39;t like beer :P</DonateText>
   <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
   <Requires/>
-  <Config Name="Working Directory" Target="/opt/adguardhome/work" Default="/mnt/user/appdata/adguard_home/workingdir" Mode="rw" Description="Working Directory" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/adguard_home/workingdir</Config>
-  <Config Name="Working Directory" Target="/opt/adguardhome/conf" Default="/mnt/user/appdata/adguard_home/config" Mode="rw" Description="Configuration Directory" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/adguard_home/config</Config>
+  <Config Name="Working Directory" Target="/opt/adguardhome/work" Default="/mnt/user/appdata/adguard_home/workingdir" Mode="rw" Description="Working Directory" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/adguard-home/workingdir</Config>
+  <Config Name="Working Directory" Target="/opt/adguardhome/conf" Default="/mnt/user/appdata/adguard_home/config" Mode="rw" Description="Configuration Directory" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/adguard-home/config</Config>
   <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Port for the Web UI" Type="Port" Display="advanced" Required="false" Mask="false">3000</Config>
   <Config Name="DNS Server" Target="53" Default="53" Mode="tcp" Description="Port that is used for the DNS Server (Changing this is not recomended)" Type="Port" Display="advanced" Required="false" Mask="false">53</Config>
 </Container>
