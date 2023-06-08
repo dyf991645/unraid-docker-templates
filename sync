@@ -1,0 +1,31 @@
+#!/bin/zsh
+
+set -ex
+
+if [[ ! -f .env ]]; then
+    echo "connection info missed"
+    return
+fi
+export $(grep -v '^#' .env | xargs)
+
+echo smb: ${smb}
+src=/Volumes/$(basename ${smb})/plugins/dockerMan/templates-user
+echo src: ${src}
+if [[ ! -d ${src} ]]; then
+    echo "mount smb share ${src}"
+    open ${smb}
+    sleep 10
+    if [[ ! -d ${src} ]]; then
+        err="[mount] ${smb} mount failed"
+        echo $err
+        return
+    fi
+fi
+
+from=${src}/*
+echo from: ${from}
+to=$(pwd)/templates/
+echo to: ${to}
+
+cp ${src}/* ${to}
+
