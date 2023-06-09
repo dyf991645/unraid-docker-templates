@@ -28,4 +28,4 @@ to=$(pwd)/templates/
 echo to: ${to}
 
 cp ${src}/* ${to}
-
+chmod 644 ${to}*

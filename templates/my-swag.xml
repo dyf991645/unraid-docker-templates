@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>swag</Name>
-  <Repository>lscr.io/linuxserver/swag:latest</Repository>
+  <Repository>lscr.io/linuxserver/swag</Repository>
   <Registry>https://github.com/orgs/linuxserver/packages/container/package/swag</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -17,7 +17,7 @@
   <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1686107253</DateInstalled>
+  <DateInstalled>1686202725</DateInstalled>
   <DonateText>Donations</DonateText>
   <DonateLink>https://www.linuxserver.io/donate</DonateLink>
   <Requires/>
