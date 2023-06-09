@@ -27,5 +27,9 @@ echo from: ${from}
 to=$(pwd)/templates/
 echo to: ${to}
 
+if [[ ! -d ${to} ]];then
+    mkdir ${to}
+fi
+
 cp ${src}/* ${to}
 chmod 644 ${to}*
