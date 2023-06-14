@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>adguard-home</Name>
-  <Repository>adguard/adguardhome</Repository>
+  <Repository>adguard/adguardhome:latest</Repository>
   <Registry>https://registry.hub.docker.com/r/adguard/adguardhome</Registry>
   <Network>br0</Network>
   <MyIP>192.168.31.53</MyIP>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1686193637</DateInstalled>
+  <DateInstalled>1686393626</DateInstalled>
   <DonateText>If you like it, then consider buying me a soda as I don&amp;amp;#39;t like beer :P</DonateText>
   <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
   <Requires/>
