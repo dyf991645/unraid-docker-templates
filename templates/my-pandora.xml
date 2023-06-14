@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>pandora</Name>
+  <Repository>pengzhile/pandora</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/adminer.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1686710707</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="PANDORA_SERVER" Target="PANDORA_SERVER" Default="0.0.0.0:8082" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0.0.0.0:8082</Config>
+  <Config Name="PANDORA_ACCESS_TOKEN" Target="PANDORA_ACCESS_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEVOVUpHTkVNMVFURTRNMEZCTWpkQ05UZzVNRFUxUlRVd1FVSkRNRU13UmtGRVFrRXpSZyJ9.eyJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJkeWY5OTE2NDVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsidXNlcl9pZCI6InVzZXItYktack5Fdm01MzIxUHVDYTFpd05vSjZIIn0sImlzcyI6Imh0dHBzOi8vYXV0aDAub3BlbmFpLmNvbS8iLCJzdWIiOiJhdXRoMHw2M2Y4OTY1ZjllMjMwNTRhZmQ5YmVlOWIiLCJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSIsImh0dHBzOi8vb3BlbmFpLm9wZW5haS5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNjg2MzcyMTM0LCJleHAiOjE2ODc1ODE3MzQsImF6cCI6IlRkSkljYmUxNldvVEh0Tjk1bnl5d2g1RTR5T282SXRHIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCBtb2RlbC5yZWFkIG1vZGVsLnJlcXVlc3Qgb3JnYW5pemF0aW9uLnJlYWQgb3JnYW5pemF0aW9uLndyaXRlIn0.o8EytyUBJJUlb0gzCPLG3lVSTbaUfrv4sHr1fn1kkSJuGOZ1PBXW0bf6Zig9CYgTYpk7vmkkvZlEGihfX31FCJZxMaXPdJDMPYGZzrogI_K_z-7b_02QxF_E-OdYxJducYTzQ5Q7ZoliHT-Ly3zh9n8pAQir0LdRXv9ZoYk60BoGn_Xft4qVDNciYDbJkk2SCEIcjLUgq-UsaaO-yLNX-BWOiD6CQ3EHji1Ki53Iuw8-756adLUYKdCuztU9yHd6lP_dFfIpCkpsGWx1ZcQcPllTvm2SLCH_YbbqE51CEN99gbBfGS29-SAM7Y0C_QxFkI3yxZcbG89LA9vZGknT8Q</Config>
+  <Config Name="http" Target="8082" Default="8082" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8082</Config>
+  <Config Name="PANDORA_CLOUD" Target="PANDORA_CLOUD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
