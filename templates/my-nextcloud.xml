@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>nextcloud</Name>
-  <Repository>nextcloud</Repository>
+  <Repository>nextcloud:latest</Repository>
   <Registry>https://registry.hub.docker.com/_/nextcloud</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -13,13 +13,13 @@
   Nextcloud 21.X with full ONLYOFFICE integration.&#xD;
   Based on Apache.</Overview>
   <Category>Cloud:</Category>
-  <WebUI>http://[IP]:[PORT:10180]</WebUI>
+  <WebUI>http://[IP]:[PORT:8081]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/maschhoff/docker/master/unraid%20xml/my-nextcloud.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/nextcloud.png</Icon>
   <ExtraParams>--user 99</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1686465464</DateInstalled>
+  <DateInstalled>1687243730</DateInstalled>
   <DonateText>Please buy me a Pizza</DonateText>
   <DonateLink>https://www.buymeacoffee.com/maschhoff</DonateLink>
   <Requires/>
