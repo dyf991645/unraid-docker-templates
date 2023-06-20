@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>vm_custom_icons</Name>
+  <Name>vm-custom-icons</Name>
   <Repository>spaceinvaderone/vm_custom_icons</Repository>
   <Registry>https://hub.docker.com/r/spaceinvaderone/vm_custom_icons</Registry>
   <Network>bridge</Network>
@@ -34,7 +34,7 @@ Other options dont change</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1687240327</DateInstalled>
+  <DateInstalled>1687241780</DateInstalled>
   <DonateText>If you like my work then please buy me a beer! :)</DonateText>
   <DonateLink>https://www.paypal.com/paypalme/spaceinvader</DonateLink>
   <Requires/>
