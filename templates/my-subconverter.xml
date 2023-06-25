@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>subconverter</Name>
+  <Repository>tindy2013/subconverter</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/subconverter.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1687671941</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="port" Target="25500" Default="25500" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">25500</Config>
+  <Config Name="profile" Target="/base/sub" Default="/mnt/user/appdata/subconverter/sub" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/subconverter/sub</Config>
+  <Config Name="pref" Target="/base/pref.ini" Default="/mnt/user/appdata/subconverter/pref.ini" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/subconverter/pref.ini</Config>
+</Container>

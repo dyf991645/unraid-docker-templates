@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>logstash-output-loki</Name>
-  <Repository>******/logstash-output-loki</Repository>
+  <Repository>******/logstash-output-loki:latest</Repository>
   <Registry/>
   <Network>bridge</Network>
   <MyIP/>
@@ -17,7 +17,7 @@
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1685435368</DateInstalled>
+  <DateInstalled>1687616206</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

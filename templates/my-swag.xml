@@ -17,7 +17,7 @@
   <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1687241314</DateInstalled>
+  <DateInstalled>1687660237</DateInstalled>
   <DonateText>Donations</DonateText>
   <DonateLink>https://www.linuxserver.io/donate</DonateLink>
   <Requires/>

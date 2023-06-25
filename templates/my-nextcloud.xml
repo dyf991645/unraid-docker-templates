@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>nextcloud</Name>
-  <Repository>nextcloud:latest</Repository>
+  <Repository>nextcloud</Repository>
   <Registry>https://registry.hub.docker.com/_/nextcloud</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -19,7 +19,7 @@
   <ExtraParams>--user 99</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1687243730</DateInstalled>
+  <DateInstalled>1687602296</DateInstalled>
   <DonateText>Please buy me a Pizza</DonateText>
   <DonateLink>https://www.buymeacoffee.com/maschhoff</DonateLink>
   <Requires/>
