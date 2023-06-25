@@ -22,7 +22,7 @@ https://hub.docker.com/r/cnk3x/xunlei/</Overview>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1685344614</DateInstalled>
+  <DateInstalled>1687609297</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

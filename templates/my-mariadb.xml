@@ -28,7 +28,7 @@ docker exec -i MariaDB-Official sh -c 'exec mysql -uroot -p"YOUR_ROOT_PASSWORD"'
   <ExtraParams>--user=99:100 --memory=2G</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1685344687</DateInstalled>
+  <DateInstalled>1687602946</DateInstalled>
   <DonateText>If you like my work please </DonateText>
   <DonateLink>http://paypal.me/marcgutt</DonateLink>
   <Requires/>
