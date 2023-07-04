@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>emby-pinyin</Name>
+  <Repository>******/emby-pinyin:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1688458883</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEBHOOK_ENABLED" Target="WEBHOOK_ENABLED" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="CRON_ENABLED" Target="CRON_ENABLED" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="CRON_SCHEDULE" Target="CRON_SCHEDULE" Default="0 * * * *" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0 * * * *</Config>
+  <Config Name="HOST" Target="HOST" Default="http://192.168.31.101:8096" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.31.101:8096</Config>
+  <Config Name="API_KEY" Target="API_KEY" Default="JELLYFIN_KEY" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">8a581f1fd350410ca443a3e4b3a07d5d</Config>
+  <Config Name="SORT_TYPE" Target="SORT_TYPE" Default="1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="WEBHOOK_PORT" Target="80" Default="8083" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8083</Config>
+</Container>
