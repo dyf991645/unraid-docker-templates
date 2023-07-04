@@ -17,11 +17,11 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1687671941</DateInstalled>
+  <DateInstalled>1687760697</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="port" Target="25500" Default="25500" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">25500</Config>
-  <Config Name="profile" Target="/base/sub" Default="/mnt/user/appdata/subconverter/sub" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/subconverter/sub</Config>
+  <Config Name="profile" Target="/base/subs" Default="/mnt/user/appdata/subconverter/subs" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/subconverter/subs</Config>
   <Config Name="pref" Target="/base/pref.ini" Default="/mnt/user/appdata/subconverter/pref.ini" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/subconverter/pref.ini</Config>
 </Container>
