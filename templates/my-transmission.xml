@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1687609253</DateInstalled>
+  <DateInstalled>1689400204</DateInstalled>
   <DonateText>Donations</DonateText>
   <DonateLink>https://www.linuxserver.io/donate</DonateLink>
   <Requires/>
@@ -26,8 +26,6 @@
   <Config Name="Port: 51413" Target="51413" Default="51413" Mode="udp" Description="Torrent Port UDP" Type="Port" Display="always" Required="true" Mask="false">51413</Config>
   <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Local path for downloads." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/download/</Config>
   <Config Name="Path: /watch" Target="/watch" Default="" Mode="rw" Description="Watch folder for torrent files." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/download/watch/</Config>
-  <Config Name="USER" Target="USER" Default="username" Mode="{3}" Description="Specify an optional username for the interface" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
-  <Config Name="PASS" Target="PASS" Default="password" Mode="{3}" Description="Specify an optional password for the interface" Type="Variable" Display="always" Required="false" Mask="true">******</Config>
   <Config Name="PEERPORT" Target="PEERPORT" Default="peerport" Mode="{3}" Description="Specify an optional port for torrent TCP/UDP connections. Fills peer-port setting." Type="Variable" Display="always" Required="false" Mask="false">51413</Config>
   <Config Name="TRANSMISSION_WEB_HOME" Target="TRANSMISSION_WEB_HOME" Default="/config/flood-for-transmission" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config/web-ui/home</Config>
   <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/transmission" Mode="rw" Description="Where transmission should store config files and logs." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/transmission</Config>
