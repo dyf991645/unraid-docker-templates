@@ -22,7 +22,7 @@ https://hub.docker.com/r/cnk3x/xunlei/</Overview>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1689746307</DateInstalled>
+  <DateInstalled>1690191562</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -33,7 +33,7 @@ https://hub.docker.com/r/cnk3x/xunlei/</Overview>
   <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="web port" Target="2345" Default="2345" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2345</Config>
   <Config Name="debug" Target="XL_DEBUG" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
-  <Config Name="UID" Target="UID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="UID" Target="UID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="GID" Target="GID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="host" Target="host" Default="unraid-xunlei" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">unraid-xunlei</Config>
 </Container>

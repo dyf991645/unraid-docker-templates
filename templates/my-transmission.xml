@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1689400204</DateInstalled>
+  <DateInstalled>1690191585</DateInstalled>
   <DonateText>Donations</DonateText>
   <DonateLink>https://www.linuxserver.io/donate</DonateLink>
   <Requires/>
@@ -29,7 +29,7 @@
   <Config Name="PEERPORT" Target="PEERPORT" Default="peerport" Mode="{3}" Description="Specify an optional port for torrent TCP/UDP connections. Fills peer-port setting." Type="Variable" Display="always" Required="false" Mask="false">51413</Config>
   <Config Name="TRANSMISSION_WEB_HOME" Target="TRANSMISSION_WEB_HOME" Default="/config/flood-for-transmission" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config/web-ui/home</Config>
   <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/transmission" Mode="rw" Description="Where transmission should store config files and logs." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/transmission</Config>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">1000</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
 </Container>
