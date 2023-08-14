@@ -34,12 +34,12 @@ License&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1687603088</DateInstalled>
+  <DateInstalled>1692003453</DateInstalled>
   <DonateText>You are rich huh? Help people in need!</DonateText>
   <DonateLink>https://bit.ly/3zAjqUx</DonateLink>
   <Requires>Additional WEBUI is required, read the README for details.</Requires>
   <Config Name="RPC Secret" Target="RPC_SECRET" Default="" Mode="" Description="Set RPC secret authorization token." Type="Variable" Display="always" Required="true" Mask="true">******</Config>
-  <Config Name="Download Location" Target="/downloads" Default="" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/download/complete/</Config>
+  <Config Name="Download Location" Target="/downloads" Default="" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/download/aria2/</Config>
   <Config Name="Config Location" Target="/config" Default="/mnt/user/appdata/aria2-pro" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/aria2-pro</Config>
   <Config Name="IPv6 Mode" Target="IPV6_MODE" Default="true" Mode="" Description="Whether to enable IPv6 support for Aria2. Optional: true or false. Set the options disable-ipv6=false and enable-dht6=true in the configuration file(aria2.conf)." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="RPC Port" Target="RPC_PORT" Default="6800" Mode="" Description="Set RPC listen port." Type="Variable" Display="always" Required="false" Mask="false">6800</Config>
@@ -47,4 +47,5 @@ License&#xD;
   <Config Name="RPC Port Bind" Target="6800" Default="6800" Mode="tcp" Description="bind RPC listen port." Type="Port" Display="always" Required="false" Mask="false">6800</Config>
   <Config Name="Listen Port Bind / TCP" Target="6888" Default="6888" Mode="tcp" Description="Bind BT listen port (TCP)." Type="Port" Display="always" Required="false" Mask="false">6888</Config>
   <Config Name="Listen Port Bind / UDP" Target="6888" Default="6888" Mode="udp" Description="Bind BT listen port (UDP)." Type="Port" Display="always" Required="false" Mask="false">6888</Config>
+  <Config Name="IPV6_MODE" Target="IPV6_MODE" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
 </Container>

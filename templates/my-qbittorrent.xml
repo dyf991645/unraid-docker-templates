@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>qbittorrent</Name>
+  <Repository>superng6/qbittorrent</Repository>
+  <Registry>https://hub.docker.com/r/superng6/qbittorrent/</Registry>
+  <Network>br0</Network>
+  <MyIP>192.168.31.113</MyIP>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/superng6/qbittorrentee/</Support>
+  <Project/>
+  <Overview>Docker qBittorrent &#x4E2D;&#x56FD;&#x4F18;&#x5316;&#x7248;&#xD;
+&#x535A;&#x5BA2;&#xFF1A;https://sleele.com/2020/04/09/docker-qbittorrent-optimizing&#xD;
+Docker Hub&#xFF1A;https://hub.docker.com/r/superng6/qbittorrent&#xD;
+GitHub&#xFF1A;https://github.com/SuperNG6/Docker-qBittorrent</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/xushier/HD-Icons/main/border-radius/Qbittorrent_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1691995604</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Path 1" Target="/config" Default="/mnt/user/appdata/qbittorrentee" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qbittorrent</Config>
+  <Config Name="Container Path 2" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/download/qbittorrent</Config>
+  <Config Name="Container Port 1" Target="6881" Default="6881" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6881</Config>
+  <Config Name="Container Port 2" Target="6881" Default="6881" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">6881</Config>
+  <Config Name="Container Port 3" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="PUID" Target="PUID" Default="1000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+</Container>

@@ -17,13 +17,13 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1689395279</DateInstalled>
+  <DateInstalled>1690773807</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="PANDORA_SERVER" Target="PANDORA_SERVER" Default="0.0.0.0:8082" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0.0.0.0:8082</Config>
-  <Config Name="PANDORA_ACCESS_TOKEN" Target="PANDORA_ACCESS_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEVOVUpHTkVNMVFURTRNMEZCTWpkQ05UZzVNRFUxUlRVd1FVSkRNRU13UmtGRVFrRXpSZyJ9.eyJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJkeWY5OTE2NDVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsidXNlcl9pZCI6InVzZXItYktack5Fdm01MzIxUHVDYTFpd05vSjZIIn0sImlzcyI6Imh0dHBzOi8vYXV0aDAub3BlbmFpLmNvbS8iLCJzdWIiOiJhdXRoMHw2M2Y4OTY1ZjllMjMwNTRhZmQ5YmVlOWIiLCJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSIsImh0dHBzOi8vb3BlbmFpLm9wZW5haS5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNjg5Mzk1MzQ2LCJleHAiOjE2OTA2MDQ5NDYsImF6cCI6IlRkSkljYmUxNldvVEh0Tjk1bnl5d2g1RTR5T282SXRHIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCBtb2RlbC5yZWFkIG1vZGVsLnJlcXVlc3Qgb3JnYW5pemF0aW9uLnJlYWQgb3JnYW5pemF0aW9uLndyaXRlIG9mZmxpbmVfYWNjZXNzIn0.fS7M33oHAEM0X4TV_yWhTSUa4eT6LXESwiXNh8yX7K8AyP1HDYjWEm3RrvrJXkl6ffFY55jAD61k49Hc717SgNrLTaPFjkJchEfBziF4gD-Juzzcy2nTYhsTOjv_96T4IqQz9ldH0-8ecJM3EonkzVgB5uV8OOsa56T2dfsZYz_JjCLT8FLbVzWmvGfLADZmrIaCuNn0uHPEQnpvGWjIcuuogwGmN-zOf3Xvew1XVqpSjDvU0jj7se9U-yDLsJJn0AXjXemcG_OBZKYE8InF6S3OUTN5EQ9lm2ujoZthQ5stL2F3J6XO5KzS2zX_8feChG1Nc4C4CQ9Wg0fW6LUsHA</Config>
+  <Config Name="PANDORA_ACCESS_TOKEN" Target="PANDORA_ACCESS_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="http" Target="8082" Default="8082" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8082</Config>
-  <Config Name="PANDORA_CLOUD" Target="PANDORA_CLOUD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PANDORA_CLOUD" Target="PANDORA_CLOUD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
   <Config Name="PANDORA_VERBOSE " Target="PANDORA_VERBOSE " Default="1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
 </Container>

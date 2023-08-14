@@ -22,12 +22,12 @@ https://hub.docker.com/r/cnk3x/xunlei/</Overview>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1690191562</DateInstalled>
+  <DateInstalled>1691587687</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Container Path 1" Target="/xunlei/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/thunder/</Config>
-  <Config Name="Container Path 2" Target="/xunlei/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/download/complete/</Config>
+  <Config Name="Container Path 2" Target="/xunlei/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/download/thunder/</Config>
   <Config Name="Container Variable 1" Target="XL_WEB_PORT" Default="2345" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">2345</Config>
   <Config Name="Container Variable 2" Target="XL_DEBUG" Default="0" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
   <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>

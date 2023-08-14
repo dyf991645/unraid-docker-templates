@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>qbittorrentee</Name>
+  <Repository>superng6/qbittorrentee</Repository>
+  <Registry>https://hub.docker.com/r/superng6/qbittorrentee/</Registry>
+  <Network>br0</Network>
+  <MyIP>192.168.31.113</MyIP>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/superng6/qbittorrentee/</Support>
+  <Project/>
+  <Overview> qBittorrent&#x589E;&#x5F3A;&#x7248;&#xFF0C;&#x9632;&#x5438;&#x8840;&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/superng6/qbittorrentee/</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/xushier/HD-Icons/main/border-radius/Qbittorrent_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1691573079</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Path 1" Target="/config" Default="/mnt/user/appdata/qbittorrentee" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qbittorrentee</Config>
+  <Config Name="Container Path 2" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/download/qbittorrentee</Config>
+  <Config Name="Container Port 1" Target="6881" Default="6881" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6881</Config>
+  <Config Name="Container Port 2" Target="6881" Default="6881" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">6881</Config>
+  <Config Name="Container Port 3" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">80</Config>
+  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="PUID" Target="PUID" Default="1000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+</Container>
