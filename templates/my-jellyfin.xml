@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>jellyfin</Name>
-  <Repository>jellyfin/jellyfin:10.8.4-1</Repository>
+  <Repository>jellyfin/jellyfin:latest</Repository>
   <Registry>https://hub.docker.com/r/jellyfin/jellyfin/</Registry>
   <Network>host</Network>
   <MyIP/>
@@ -39,7 +39,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1687605617</DateInstalled>
+  <DateInstalled>1693881250</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
