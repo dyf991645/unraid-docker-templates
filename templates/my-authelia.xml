@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>authelia</Name>
+  <Repository>authelia/authelia</Repository>
+  <Registry>https://hub.docker.com/r/authelia/authelia/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/VWAG7rZ</Support>
+  <Project>https://github.com/authelia/authelia</Project>
+  <Overview>Authelia is an open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal. It acts as a companion of reverse proxies like nginx, Traefik or HAProxy to let them know whether queries should pass through. Our docs can be found at https://docs.ibracorp.io</Overview>
+  <Category>Security: Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:9091]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/authelia/authelia.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/authelia/authelia.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1693993920</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="Authelia Web UI" Target="9091" Default="9091" Mode="tcp" Description="This is the Web UI Port, and is used to access the server gui." Type="Port" Display="always" Required="true" Mask="{8}">9091</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/Authelia" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/authelia</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+</Container>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>tiny-media-manager3</Name>
+  <Repository>romancin/tinymediamanager:latest</Repository>
+  <Registry>https://hub.docker.com/r/coolasice1999/tmm</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/hussainalhaddad/docker-templates</Support>
+  <Project>https://www.tinymediamanager.org/</Project>
+  <Overview>tinyMediaManager is a media management tool written in Java/Swing. It is written to provide metadata for the Kodi Media Center (formerly known as XBMC), MediaPortal and Plex media server. Due to the fact that it is written in Java, tinyMediaManager will run on Windows, Linux and macOS (and possible more OS).</Overview>
+  <Category>MediaApp:Video MediaApp:Other MediaServer:Video MediaServer:Other</Category>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/hussainalhaddad/docker-templates/master/tinymediamanager/tinymediamanager.xml</TemplateURL>
+  <Icon>https://github.com/hussainalhaddad/docker-templates/raw/master/tinymediamanager/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1693212362</DateInstalled>
+  <DonateText>If you like my work please consider donating.</DonateText>
+  <DonateLink>https://www.paypal.me/husainalhadad</DonateLink>
+  <Requires/>
+  <Config Name="MediaDir" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/</Config>
+  <Config Name="Timezone" Target="TZ" Default="Asia/Bahrain" Mode="" Description="Full list:&#13;&#10;&#13;&#10;https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="WebUI port" Target="5800" Default="5800" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5801</Config>
+  <Config Name="ConfigDir" Target="/config" Default="/mnt/user/appdata/TinyMediaManager3" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/tiny-media-manager3</Config>
+  <Config Name="GROUP_ID" Target="GROUP_ID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+  <Config Name="USER_ID" Target="USER_ID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">1000</Config>
+  <Config Name="KEEP_APP_RUNNING" Target="KEEP_APP_RUNNING" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">1</Config>
+  <Config Name="DISPLAY_WIDTH" Target="DISPLAY_WIDTH" Default="1280" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">1280</Config>
+  <Config Name="DISPLAY_HEIGHT&#9;" Target="DISPLAY_HEIGHT&#9;" Default="768" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">768</Config>
+</Container>

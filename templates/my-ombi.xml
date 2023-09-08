@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ombi</Name>
+  <Repository>lscr.io/linuxserver/ombi</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/ombi</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-ombi/issues/new/choose</Support>
+  <Project>https://ombi.io</Project>
+  <Overview>Ombi(https://ombi.io) allows you to host your own Plex Request and user management system.&#xD;
+If you are sharing your Plex server with other users, allow them to request new content using an easy to manage interface!&#xD;
+Manage all your requests for Movies and TV with ease, leave notes for the user and get notification when a user requests something.&#xD;
+Allow your users to post issues against their requests so you know there is a problem with the audio etc.&#xD;
+Even automatically send them weekly newsletters of new content that has been added to your Plex server!</Overview>
+  <Category>Downloaders: Network:Other MediaApp:Video Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:3579]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/ombi.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ombi-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1693216865</DateInstalled>
+  <DonateText>Donations</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="3579" Default="3579" Mode="tcp" Description="web gui" Type="Port" Display="always" Required="true" Mask="false">3579</Config>
+  <Config Name="BASE_URL" Target="BASE_URL" Default="/ombi" Mode="{3}" Description="Subfolder can optionally be defined as an env variable for reverse proxies. Keep in mind that once this value is defined, the gui setting for base url no longer works. To use the gui setting, remove this env variable." Type="Variable" Display="always" Required="false" Mask="false">/ombi</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/ombi" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/ombi</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

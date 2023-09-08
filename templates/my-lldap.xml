@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>lldap</Name>
+  <Repository>nitnelave/lldap:stable</Repository>
+  <Registry>https://hub.docker.com/r/nitnelave/lldap/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/nitnelave/lldap</Project>
+  <Overview>A lightweight LDAP server for user management with a web interface.  For more information please visit the GitHub repository.</Overview>
+  <Category>Security: Tools:Utilities Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:17170]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/lewislarsen/lldap-unraid/master/lldap.xml</TemplateURL>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1694157113</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Data path" Target="/data" Default="/mnt/user/appdata/lldap/" Mode="rw" Description="The default path for LLDAP configuration files, this is where your user configuration etc will be stored." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/lldap/</Config>
+  <Config Name="Container Variable 1" Target="UID" Default="1000" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
+  <Config Name="Container Variable 2" Target="GID" Default="1000" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="JWT Secret" Target="LLDAP_JWT_SECRET" Default="" Mode="" Description="Set this to a random string of characters as it is used for your JWT secret." Type="Variable" Display="always" Required="true" Mask="false">******!@#</Config>
+  <Config Name="LDAP Admin Password" Target="LLDAP_LDAP_USER_PASS" Default="password" Mode="" Description="The password for the default admin user. Please change this to something more secure." Type="Variable" Display="always" Required="true" Mask="false">******</Config>
+  <Config Name="Base distinguished name" Target="LLDAP_LDAP_BASE_DN" Default="dc=example,dc=com" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">dc=example,dc=com</Config>
+  <Config Name="Web front-end port" Target="17170" Default="17170" Mode="tcp" Description="The default port for the web front-end." Type="Port" Display="always" Required="true" Mask="false">17170</Config>
+  <Config Name="LDAP port" Target="3890" Default="3890" Mode="tcp" Description="The default port for LDAP connections." Type="Port" Display="always" Required="true" Mask="false">3890</Config>
+</Container>

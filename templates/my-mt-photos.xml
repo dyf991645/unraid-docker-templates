@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mt-photos</Name>
+  <Repository>mtphotos/mt-photos:latest</Repository>
+  <Registry>https://hub.docker.com/r/mtphotos/mt-photos</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://mtmt.tech/contact</Support>
+  <Project>https://mtmt.tech</Project>
+  <Overview>&#x7167;&#x7247;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</Overview>
+  <Category>Productivity: MediaApp:Photos</Category>
+  <WebUI>http://[IP]:[PORT:8063]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.mtmt.tech/logo-r.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1693966691</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="&#x7AEF;&#x53E3;&#x6620;&#x5C04;1" Target="8063" Default="8063" Mode="tcp" Description="MT Photos Web&#x670D;&#x52A1;&#x7AEF;&#x53E3;" Type="Port" Display="always" Required="true" Mask="{8}">8063</Config>
+  <Config Name="&#x6570;&#x636E;&#x5B58;&#x50A8;&#x76EE;&#x5F55;" Target="/config" Default="/mnt/user/appdata/MtPhotos_config" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="{8}">/mnt/user/appdata/mt-photos/config</Config>
+  <Config Name="App&#x5907;&#x4EFD;&#x7684;&#x7167;&#x7247;&#x3001;&#x89C6;&#x9891;&#x76EE;&#x5F55;" Target="/upload" Default="/mnt/user/appdata/MtPhotos_upload" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="{8}">/mnt/user/appdata/mt-photos/upload</Config>
+</Container>
