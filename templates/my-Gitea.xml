@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Gitea</Name>
+  <Name>gitea</Name>
   <Repository>gitea/gitea</Repository>
   <Registry>https://registry.hub.docker.com/r/gitea/gitea/</Registry>
   <Network>bridge</Network>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1694071825</DateInstalled>
+  <DateInstalled>1694163031</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
