@@ -17,11 +17,11 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1694163031</DateInstalled>
+  <DateInstalled>1695017320</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Git over SSH" Target="22" Default="22" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">222</Config>
+  <Config Name="Git over SSH" Target="22" Default="22" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">10022</Config>
   <Config Name="WebUI and Git over HTTP" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3001</Config>
   <Config Name="Data Storage Path" Target="/data" Default="/mnt/user/appdata/gitea" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/gitea</Config>
 </Container>

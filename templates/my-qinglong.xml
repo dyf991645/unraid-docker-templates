@@ -21,7 +21,7 @@ https://hub.docker.com/r/whyour/qinglong/</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1660124818</DateInstalled>
+  <DateInstalled>1702019897</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -34,4 +34,5 @@ https://hub.docker.com/r/whyour/qinglong/</Overview>
   <Config Name="Container Variable 7" Target="QL_BRANCH" Default="v2.10.13" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">v2.10.13</Config>
   <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="http" Target="5700" Default="5700" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">15700</Config>
+  <Config Name="data" Target="/ql/data" Default="/mnt/user/appdata/qinglong" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qinglong</Config>
 </Container>

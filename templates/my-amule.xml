@@ -21,7 +21,7 @@ VERSION&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1691732970</DateInstalled>
+  <DateInstalled>1695107019</DateInstalled>
   <DonateText>If you like my work, please consider making a little donation.</DonateText>
   <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>
@@ -31,7 +31,7 @@ VERSION&#xD;
   <Config Name="Storage (complete)" Target="/incoming" Default="" Mode="rw" Description="This is the location for complete downloads." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/download/amule/</Config>
   <Config Name="Storage (incomplete)" Target="/temp" Default="" Mode="rw" Description="This is the location for incomplete downloads." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/download/amule/incomplete/</Config>
   <Config Name="Storage (config)" Target="/home/amule/.aMule" Default="" Mode="rw" Description="This is the location for the internal data." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/amule</Config>
-  <Config Name="WEBUI_PWD" Target="WEBUI_PWD" Default="******" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">******</Config>
+  <Config Name="WEBUI_PWD" Target="WEBUI_PWD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">******</Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
   <Config Name="WEBUI_TEMPLATE" Target="WEBUI_TEMPLATE" Default="default|AmuleWebUI-Reloaded" Mode="" Description="Alternative material WebUI design." Type="Variable" Display="advanced" Required="false" Mask="false">AmuleWebUI-Reloaded</Config>

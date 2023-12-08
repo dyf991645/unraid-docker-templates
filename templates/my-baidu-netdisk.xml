@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1691574188</DateInstalled>
+  <DateInstalled>1698418916</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -25,7 +25,7 @@
   <Config Name="vnc" Target="5900" Default="5900" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5902</Config>
   <Config Name="config" Target="/config" Default="/mnt/user/appdata/baidu-netdisk/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/baidu-netdisk/</Config>
   <Config Name="download" Target="/config/baidunetdiskdownload" Default="/mnt/user/download/complete/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/download/baidu-netdisk/</Config>
-  <Config Name="VNC_PASSWORD" Target="VNC_PASSWORD" Default="******" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">******</Config>
-  <Config Name="USER_ID" Target="USER_ID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="VNC_PASSWORD" Target="VNC_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="USER_ID" Target="USER_ID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="GROUP_ID" Target="100" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
 </Container>

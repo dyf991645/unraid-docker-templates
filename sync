@@ -34,8 +34,8 @@ fi
 cp ${src}/* ${to}
 chmod 644 ${to}*
 
-replacement=(${(s/,/)replacement})
+replacement=(${(s/|/)replacement})
 for item in "${replacement[@]}"
 do
-    sed -i '' "s|$item|******</Config>|g" templates/*.xml
+    sed -i '' "s|$item</Config>|******</Config>|g" templates/*.xml
 done

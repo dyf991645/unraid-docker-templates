@@ -36,10 +36,10 @@
   <WebUI>http://[IP]:[PORT:8096]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/jellyfin/jellyfin/deployment/unraid/docker-templates/jellyfin.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/jellyfin.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1693881250</DateInstalled>
+  <DateInstalled>1700463659</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

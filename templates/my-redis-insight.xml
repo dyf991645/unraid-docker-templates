@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>redis-insight</Name>
+  <Repository>redislabs/redisinsight:latest</Repository>
+  <Registry>https://hub.docker.com/r/redislabs/redisinsight</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/115034-trophybuck-support/</Support>
+  <Project>https://redis.com/redis-enterprise/redis-insight/</Project>
+  <Overview>RedisInsight - The GUI for Redis.</Overview>
+  <Category>Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:8001]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/TrophyBuck/unraid-templates/master/redisInsight/redisInsight.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/TrophyBuck/unraid-templates/main/redisInsight/redisInsightLogo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1695285137</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="8001" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8001</Config>
+  <Config Name="RITRUSTEDORIGINS" Target="RITRUSTEDORIGINS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://redis.home.wirerope.fun:10443</Config>
+  <Config Name="db" Target="/db" Default="/mnt/user/appdata/redis-insight" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/redis-insight</Config>
+  <Config Name="RILOGLEVEL" Target="RILOGLEVEL" Default="debug" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">DEBUG</Config>
+</Container>
