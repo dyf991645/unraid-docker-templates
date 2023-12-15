@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>xunlei</Name>
+  <Name>thunder</Name>
   <Repository>cnk3x/xunlei</Repository>
   <Registry>https://hub.docker.com/r/cnk3x/xunlei/</Registry>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
@@ -22,7 +22,7 @@ https://hub.docker.com/r/cnk3x/xunlei/</Overview>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1691587687</DateInstalled>
+  <DateInstalled>1702535081</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -36,4 +36,5 @@ https://hub.docker.com/r/cnk3x/xunlei/</Overview>
   <Config Name="UID" Target="UID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="GID" Target="GID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="host" Target="host" Default="unraid-xunlei" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">unraid-xunlei</Config>
+  <Config Name="traefik.http.routers.thunder.middlewares" Target="traefik.http.routers.thunder.middlewares" Default="auth@file" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">auth@file</Config>
 </Container>

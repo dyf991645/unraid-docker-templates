@@ -1,38 +1,39 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>amule</Name>
-  <Repository>tchabaud/amule</Repository>
-  <Registry>https://hub.docker.com/r/tchabaud/amule</Registry>
+  <Repository>ngosang/amule</Repository>
+  <Registry>https://hub.docker.com/r/ngosang/amule</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/120394-support-smartphonelover-amule-torrent-client/</Support>
-  <Project>https://github.com/t-chab/dockerfiles</Project>
-  <Overview>DESCRIPTION&#xD;
-aMule is a free peer-to-peer file sharing utility that works with the EDonkey network and the Kad network, offering similar features to eMule and adding others such as GeoIP (country flags).&#xD;
-&#xD;
-VERSION&#xD;
-1.0 (2022-02-23)</Overview>
-  <Category>Downloaders: Productivity: Tools:Utilities</Category>
+  <Support>https://github.com/ngosang/docker-amule</Support>
+  <Project>https://www.amule.org/</Project>
+  <Overview>aMule is a free peer-to-peer file sharing utility that works with the eDonkey network and the Kad network, offering similar features to eMule and adding others such as GeoIP (country flags).</Overview>
+  <Category>Downloaders:</Category>
   <WebUI>http://[IP]:[PORT:4711]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/aMule.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/amule.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/riffsphereha/Unraid-Templates/master/amule/amule.xml</TemplateURL>
+  <Icon>https://github.com/riffsphereha/Unraid-Templates/blob/main/amule/amule.png?raw=true</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1695107019</DateInstalled>
-  <DonateText>If you like my work, please consider making a little donation.</DonateText>
-  <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
+  <DateInstalled>1702537837</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
   <Requires/>
-  <Config Name="WebUI" Target="4711" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4711</Config>
-  <Config Name="Port (TCP)" Target="4662" Default="" Mode="tcp" Description="Client to client transfers" Type="Port" Display="always" Required="false" Mask="false">4662</Config>
-  <Config Name="Port (UDP)" Target="4672" Default="" Mode="udp" Description="Extended aMule protocol, Queue Rating, File Reask Ping" Type="Port" Display="always" Required="false" Mask="false">4672</Config>
-  <Config Name="Storage (complete)" Target="/incoming" Default="" Mode="rw" Description="This is the location for complete downloads." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/download/amule/</Config>
-  <Config Name="Storage (incomplete)" Target="/temp" Default="" Mode="rw" Description="This is the location for incomplete downloads." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/download/amule/incomplete/</Config>
-  <Config Name="Storage (config)" Target="/home/amule/.aMule" Default="" Mode="rw" Description="This is the location for the internal data." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/amule</Config>
-  <Config Name="WEBUI_PWD" Target="WEBUI_PWD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">******</Config>
-  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
-  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
-  <Config Name="WEBUI_TEMPLATE" Target="WEBUI_TEMPLATE" Default="default|AmuleWebUI-Reloaded" Mode="" Description="Alternative material WebUI design." Type="Variable" Display="advanced" Required="false" Mask="false">AmuleWebUI-Reloaded</Config>
+  <Config Name="WebUI" Target="4711" Default="4711" Mode="tcp" Description="" Type="Port" Display="always-hide" Required="true" Mask="false">4711</Config>
+  <Config Name="Remote UI" Target="4712" Default="4712" Mode="tcp" Description="" Type="Port" Display="always-hide" Required="true" Mask="false">4712</Config>
+  <Config Name="ed2k tcp port" Target="4662" Default="4662" Mode="tcp" Description="" Type="Port" Display="always-hide" Required="true" Mask="false">4662</Config>
+  <Config Name="ed2k global search" Target="4665" Default="4665" Mode="udp" Description="Has to be ed2k tcp port +3" Type="Port" Display="always-hide" Required="true" Mask="false">4665</Config>
+  <Config Name="ed2k udp port" Target="4672" Default="4672" Mode="udp" Description="" Type="Port" Display="always-hide" Required="true" Mask="false">4672</Config>
+  <Config Name="AppData" Target="/home/amule/.aMule" Default="" Mode="rw" Description="" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/amule</Config>
+  <Config Name="Complete Downloads" Target="/incoming" Default="" Mode="rw" Description="" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/download/amule/</Config>
+  <Config Name="Incomplete Downloads" Target="/temp" Default="" Mode="rw" Description="" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/download/amule/incomplete/</Config>
+  <Config Name="Password" Target="WEBUI_PWD" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="true" Mask="true">******</Config>
+  <Config Name="Remote Password" Target="GUI_PWD" Default="" Mode="" Description="Password used by other tools using the Remote UI port (like amarr)" Type="Variable" Display="always-   hide" Required="true" Mask="true">******</Config>
+  <Config Name="traefik.http.services.amule.loadbalancer.server.port" Target="traefik.http.services.amule.loadbalancer.server.port" Default="4711" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">4711</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="MOD_FIX_KAD_GRAPH_ENABLE" Target="MOD_FIX_KAD_GRAPH_ENABLE" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="MOD_FIX_KAD_BOOTSTRAP_ENABLED" Target="MOD_FIX_KAD_BOOTSTRAP_ENABLED" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
 </Container>

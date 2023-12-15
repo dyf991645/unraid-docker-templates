@@ -17,11 +17,13 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1695017320</DateInstalled>
+  <DateInstalled>1702367132</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Git over SSH" Target="22" Default="22" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">10022</Config>
   <Config Name="WebUI and Git over HTTP" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3001</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="true" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="traefik.http.services.app.loadbalancer.server.port" Target="traefik.http.services.gitea.loadbalancer.server.port" Default="3000" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Data Storage Path" Target="/data" Default="/mnt/user/appdata/gitea" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/gitea</Config>
 </Container>

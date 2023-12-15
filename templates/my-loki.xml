@@ -21,11 +21,12 @@ Will need to be placed into your Host Path 1 directory.</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1687605926</DateInstalled>
+  <DateInstalled>1702375755</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Web Port" Target="3100" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3100</Config>
   <Config Name="Host Path 1" Target="/etc/loki" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/loki/conf/</Config>
   <Config Name="Host Path 2" Target="/loki" Default="/mnt/user/appdata/loki/data/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/loki/data/</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="false" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">false</Config>
 </Container>

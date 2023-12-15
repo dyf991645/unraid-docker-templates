@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>caddy</Name>
+  <Repository>******/caddy</Repository>
+  <Registry>https://hub.docker.com/_/caddy</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://caddyserver.com/</Project>
+  <Overview>Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go.&#xD;
+&#xD;
+&#xD;
+    Configuration&#xD;
+&#xD;
+    /config This is where CaddyV2 stores its active configuration file.&#xD;
+&#xD;
+    /data This is where CaddyV2 stores, certs and persistence data.&#xD;
+&#xD;
+&#xD;
+    Notes&#xD;
+&#xD;
+    Configure your Caddyfile using https://caddyserver.com/ and https://caddyserver.com/docs/caddyfile</Overview>
+  <Category>Network:Web</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/Poag/docker-xml/master/caddyv2.xml</TemplateURL>
+  <Icon>https://d1q6f0aelx0por.cloudfront.net/product-logos/library-caddy-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1702103917</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="HTTP" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">11080</Config>
+  <Config Name="HTTPS" Target="443" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">11443</Config>
+  <Config Name="Data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/caddy/data</Config>
+  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/CaddyV2" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/caddy/config</Config>
+  <Config Name="Caddyfile" Target="/etc/caddy/Caddyfile" Default="" Mode="rw" Description="Full Path to Caddyfile, rather than caddyfiles folder." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/caddy/Caddyfile</Config>
+</Container>

@@ -34,7 +34,7 @@ License&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1692003453</DateInstalled>
+  <DateInstalled>1702373989</DateInstalled>
   <DonateText>You are rich huh? Help people in need!</DonateText>
   <DonateLink>https://bit.ly/3zAjqUx</DonateLink>
   <Requires>Additional WEBUI is required, read the README for details.</Requires>
@@ -48,4 +48,5 @@ License&#xD;
   <Config Name="Listen Port Bind / TCP" Target="6888" Default="6888" Mode="tcp" Description="Bind BT listen port (TCP)." Type="Port" Display="always" Required="false" Mask="false">6888</Config>
   <Config Name="Listen Port Bind / UDP" Target="6888" Default="6888" Mode="udp" Description="Bind BT listen port (UDP)." Type="Port" Display="always" Required="false" Mask="false">6888</Config>
   <Config Name="IPV6_MODE" Target="IPV6_MODE" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="traefik.http.services.aria2-pro.loadbalancer.server.port" Target="traefik.http.services.aria2-pro.loadbalancer.server.port" Default="6800" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">6800</Config>
 </Container>

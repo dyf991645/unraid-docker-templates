@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1695188390</DateInstalled>
+  <DateInstalled>1702434097</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -26,4 +26,5 @@
   <Config Name="Container Variable 2" Target="GID" Default="1000" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="Web front-end port" Target="17170" Default="17170" Mode="tcp" Description="The default port for the web front-end." Type="Port" Display="always" Required="true" Mask="false">17170</Config>
   <Config Name="LDAP port" Target="3890" Default="3890" Mode="tcp" Description="The default port for LDAP connections." Type="Port" Display="always" Required="true" Mask="false">3890</Config>
+  <Config Name="traefik.http.services.lldap.loadbalancer.server.port" Target="traefik.http.services.lldap.loadbalancer.server.port" Default="17170" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">17170</Config>
 </Container>

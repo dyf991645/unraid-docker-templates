@@ -20,12 +20,13 @@
   <TemplateURL>https://raw.githubusercontent.com/natcoso9955/unRAID-docker/master/grafana_loki_unraid.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/vector.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
-  <PostArgs/>
+  <PostArgs> -c /etc/vector/vector.toml</PostArgs>
   <CPUset/>
-  <DateInstalled>1695350156</DateInstalled>
+  <DateInstalled>1702375454</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="socket port" Target="9000" Default="9000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9000</Config>
   <Config Name="Configuration Directory" Target="/etc/vector" Default="/mnt/user/appdata/vector" Mode="rw" Description="Place your vector.toml in this directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/vector</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="false" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">false</Config>
 </Container>

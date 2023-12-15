@@ -17,12 +17,15 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1695285137</DateInstalled>
+  <DateInstalled>1702534943</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Host Port 1" Target="8001" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8001</Config>
-  <Config Name="RITRUSTEDORIGINS" Target="RITRUSTEDORIGINS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://redis.home.wirerope.fun:10443</Config>
+  <Config Name="RITRUSTEDORIGINS" Target="RITRUSTEDORIGINS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://redis-insight.home.wirerope.fun:10443</Config>
   <Config Name="db" Target="/db" Default="/mnt/user/appdata/redis-insight" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/redis-insight</Config>
   <Config Name="RILOGLEVEL" Target="RILOGLEVEL" Default="debug" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">DEBUG</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="true" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="traefik.http.routers.redis-insight.entryPoints" Target="traefik.http.routers.redis-insight.entryPoints" Default="web" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">websecure</Config>
+  <Config Name="traefik.http.routers.redis-insight.middlewares" Target="traefik.http.routers.redis-insight.middlewares" Default="auth@file" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">auth@file</Config>
 </Container>

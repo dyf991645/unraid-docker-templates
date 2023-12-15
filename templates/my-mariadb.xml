@@ -28,7 +28,7 @@ docker exec -i MariaDB-Official sh -c 'exec mysql -uroot -p"YOUR_ROOT_PASSWORD"'
   <ExtraParams>--user=99:100 --memory=2G</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1687602946</DateInstalled>
+  <DateInstalled>1702433087</DateInstalled>
   <DonateText>If you like my work please </DonateText>
   <DonateLink>http://paypal.me/marcgutt</DonateLink>
   <Requires/>
@@ -39,5 +39,6 @@ docker exec -i MariaDB-Official sh -c 'exec mysql -uroot -p"YOUR_ROOT_PASSWORD"'
   <Config Name="Database Password" Target="MARIADB_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">default</Config>
   <Config Name="Data" Target="/var/lib/mysql" Default="" Mode="rw" Description="Recommened: For better performance replace /mnt/user against /mnt/cache. Note: This requires appdata share caching set to Prefer or Only!" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mariadb/data</Config>
   <Config Name="Config" Target="/etc/mysql/conf.d" Default="" Mode="rw" Description="" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/mariadb/config</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="false" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="Root Password" Target="MARIADB_ROOT_PASSWORD" Default="" Mode="" Description="Generate Random Password must be empty if you like to set your own Root Password!" Type="Variable" Display="advanced-hide" Required="false" Mask="true">******</Config>
 </Container>

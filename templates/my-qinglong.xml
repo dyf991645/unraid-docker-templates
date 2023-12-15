@@ -21,18 +21,10 @@ https://hub.docker.com/r/whyour/qinglong/</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702019897</DateInstalled>
+  <DateInstalled>1702022543</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Container Variable 1" Target="NODE_VERSION" Default="16.13.1" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">16.13.1</Config>
-  <Config Name="Container Variable 2" Target="YARN_VERSION" Default="1.22.15" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">1.22.15</Config>
-  <Config Name="Container Variable 3" Target="LANG" Default="zh_CN.UTF-8" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">zh_CN.UTF-8</Config>
-  <Config Name="Container Variable 4" Target="SHELL" Default="/bin/bash" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/bin/bash</Config>
-  <Config Name="Container Variable 5" Target="PS1" Default="\u@\h:\w $ " Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">\u@\h:\w $ </Config>
-  <Config Name="Container Variable 6" Target="QL_DIR" Default="/ql" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/ql</Config>
-  <Config Name="Container Variable 7" Target="QL_BRANCH" Default="v2.10.13" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">v2.10.13</Config>
-  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="http" Target="5700" Default="5700" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">15700</Config>
   <Config Name="data" Target="/ql/data" Default="/mnt/user/appdata/qinglong" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qinglong</Config>
 </Container>

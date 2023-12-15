@@ -19,7 +19,7 @@
   <ExtraParams>--user 99</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1688103740</DateInstalled>
+  <DateInstalled>1702630125</DateInstalled>
   <DonateText>Please buy me a Pizza</DonateText>
   <DonateLink>https://www.buymeacoffee.com/maschhoff</DonateLink>
   <Requires/>
@@ -29,4 +29,5 @@
   <Config Name="Host Path 4" Target="/var/www/html/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nextcloud/data</Config>
   <Config Name="Host Path 5" Target="/mnt/Share" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nextcloud/share</Config>
   <Config Name="http" Target="80" Default="11080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8081</Config>
+  <Config Name="traefik.http.routers.nextcloud.middlewares" Target="traefik.http.routers.nextcloud.middlewares" Default="nextcloudHeader@file" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">nextcloud@file</Config>
 </Container>

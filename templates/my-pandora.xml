@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1690773807</DateInstalled>
+  <DateInstalled>1702367479</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -26,4 +26,5 @@
   <Config Name="http" Target="8082" Default="8082" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8082</Config>
   <Config Name="PANDORA_CLOUD" Target="PANDORA_CLOUD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
   <Config Name="PANDORA_VERBOSE " Target="PANDORA_VERBOSE " Default="1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="true" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
 </Container>

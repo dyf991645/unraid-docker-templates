@@ -3,7 +3,7 @@
   <Name>jellyfin</Name>
   <Repository>jellyfin/jellyfin:latest</Repository>
   <Registry>https://hub.docker.com/r/jellyfin/jellyfin/</Registry>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -39,7 +39,7 @@
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1700463659</DateInstalled>
+  <DateInstalled>1702371089</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

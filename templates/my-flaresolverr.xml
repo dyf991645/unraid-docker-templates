@@ -17,11 +17,12 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1693216726</DateInstalled>
+  <DateInstalled>1702368944</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Port" Target="8191" Default="8191" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8191</Config>
   <Config Name="Log Level" Target="LOG_LEVEL" Default="info" Mode="" Description="Verbosity of the logging. Use `LOG_LEVEL=debug` for more information." Type="Variable" Display="always" Required="false" Mask="false">info</Config>
   <Config Name="Time Zone" Target="TZ" Default="UTC" Mode="" Description="Timezone used in the logs and the web browser." Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="false" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">false</Config>
 </Container>

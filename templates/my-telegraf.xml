@@ -60,7 +60,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1687606179</DateInstalled>
+  <DateInstalled>1702433461</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -77,4 +77,5 @@
   <Config Name="Key 4" Target="HOST_MOUNT_PREFIX" Default="/rootfs" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/rootfs</Config>
   <Config Name="Host Path 9" Target="/var/run/libvirt" Default="/var/run/libvirt" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/libvirt</Config>
   <Config Name="Host Path 10" Target="/var/run/php5-fpm.sock" Default="/var/run/php5-fpm.sock" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/php5-fpm.sock</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="false" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">false</Config>
 </Container>

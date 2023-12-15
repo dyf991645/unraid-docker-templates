@@ -20,9 +20,10 @@ Clearing Post Arguments will show the help text in the log and stop.</Overview>
   <ExtraParams/>
   <PostArgs>-s</PostArgs>
   <CPUset/>
-  <DateInstalled>1690467917</DateInstalled>
+  <DateInstalled>1702374515</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Port" Target="5201" Default="5201" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">5201</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="false" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">false</Config>
 </Container>

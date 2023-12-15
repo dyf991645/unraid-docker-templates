@@ -20,7 +20,7 @@ GitHub&#xFF1A;https://github.com/SuperNG6/Docker-qBittorrent</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1691995604</DateInstalled>
+  <DateInstalled>1702373210</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -32,4 +32,6 @@ GitHub&#xFF1A;https://github.com/SuperNG6/Docker-qBittorrent</Overview>
   <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="PUID" Target="PUID" Default="1000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="true" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="traefik.http.services.qbittorrent.loadbalancer.server.port" Target="traefik.http.services.qbittorrent.loadbalancer.server.port" Default="8080" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">8080</Config>
 </Container>
