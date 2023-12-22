@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>jaeger</Name>
+  <Repository>jaegertracing/all-in-one</Repository>
+  <Registry>https://hub.docker.com/r/jaegertracing/all-in-one/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/jaegertracing/all-in-one/</Support>
+  <Project/>
+  <Overview>Single image that runs all of Jaeger backend components and UI in one container&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/jaegertracing/all-in-one/</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:16686]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/jaeger.svg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1703216051</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="collector model.proto" Target="14250" Default="14250" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">14250</Config>
+  <Config Name="collector jaeger.thrift" Target="14268" Default="14268" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">14268</Config>
+  <Config Name="query frontend" Target="16686" Default="16686" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">16686</Config>
+  <Config Name="collector OTLP gRPC" Target="4317" Default="4317" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4317</Config>
+  <Config Name="collector OTLP HTTP" Target="4318" Default="4318" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4318</Config>
+  <Config Name="agent zipkin.thrift" Target="5775" Default="5775" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">5775</Config>
+  <Config Name="agent configs" Target="5778" Default="5778" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5778</Config>
+  <Config Name="agent jaeger.thrift" Target="6831" Default="6831" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">6831</Config>
+  <Config Name="agent jaeger.thrift nodejs" Target="6832" Default="6832" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">6832</Config>
+  <Config Name="collector zipkin compatible" Target="9411" Default="9411" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9411</Config>
+  <Config Name="traefik.http.routers.jaeger.middlewares" Target="traefik.http.routers.jaeger.middlewares" Default="auth@file" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">auth@file</Config>
+  <Config Name="traefik.http.services.jaeger.loadbalancer.server.port" Target="traefik.http.services.jaeger.loadbalancer.server.port" Default="16686" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">16686</Config>
+</Container>
