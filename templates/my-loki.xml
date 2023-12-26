@@ -17,7 +17,7 @@ Will need to be placed into your Host Path 1 directory.</Overview>
   <Category>Tools:Utilities Network:Management</Category>
   <WebUI>http://[IP]:[PORT:3100]/metrics</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/natcoso9955/unRAID-docker/master/grafana_loki_unraid.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/loki.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/loki.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

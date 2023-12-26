@@ -13,7 +13,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:8082]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/pandora.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/pandora.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

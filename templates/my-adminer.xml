@@ -22,7 +22,7 @@ Plugins: https://github.com/vrana/adminer/tree/master/plugins</Overview>
   <Category>Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/adminer.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/adminer.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/adminer.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

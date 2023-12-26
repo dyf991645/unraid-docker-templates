@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>websocat-clash-trace</Name>
-  <Repository>******/websocat:latest</Repository>
-  <Registry>https://hub.docker.com/r/******/websocat</Registry>
+  <Repository>dyf991645/websocat:latest</Repository>
+  <Registry>https://hub.docker.com/r/dyf991645/websocat</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
@@ -17,7 +17,7 @@ Will need to be placed into your Host Path 1 directory.</Overview>
   <Category>Tools:Utilities Network:Management</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/natcoso9955/unRAID-docker/master/grafana_loki_unraid.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/websocat.jpg</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/websocat.jpg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

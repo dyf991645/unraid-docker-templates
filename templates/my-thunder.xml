@@ -18,7 +18,7 @@ https://hub.docker.com/r/cnk3x/xunlei/</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:2345]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/xunlei.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/xunlei.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>

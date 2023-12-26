@@ -13,7 +13,7 @@
   <Category>Network:Management Tools:Utilities spotlight:</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/atribe/unRAID-docker/master/grafana.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/grafana.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/grafana.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

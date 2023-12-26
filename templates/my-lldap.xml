@@ -13,7 +13,7 @@
   <Category>Security: Tools:Utilities Network:Web</Category>
   <WebUI>http://[IP]:[PORT:17170]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/lewislarsen/lldap-unraid/master/lldap.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/ldap.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/ldap.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

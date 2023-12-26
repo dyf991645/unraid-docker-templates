@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>telegraf</Name>
-  <Repository>******/telegraf:latest</Repository>
+  <Repository>dyf991645/telegraf:latest</Repository>
   <Registry>https://hub.docker.com/_/telegraf/</Registry>
   <Network>host</Network>
   <MyIP/>
@@ -56,7 +56,7 @@
   <Category>Tools:Utilities</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/atribe/unRAID-docker/master/telegraf.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/telegraf.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/telegraf.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

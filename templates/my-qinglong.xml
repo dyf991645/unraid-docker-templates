@@ -17,7 +17,7 @@ https://hub.docker.com/r/whyour/qinglong/</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:15700]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/qinglong.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/qinglong.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

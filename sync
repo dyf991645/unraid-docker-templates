@@ -39,3 +39,7 @@ for item in "${replacement[@]}"
 do
     sed -i '' "s|$item</Config>|******</Config>|g" templates/*.xml
 done
+
+rg --pcre2 '^\s*<(?!(Icon>|Repository>|Registry>)).*(991645|token|TOKEN|Token|PASSWORD|Password|password)(?:(?!(\*\*\*\*\*\*|/>)).)*$'
+
+rg --pcre2 '^\s*<(?!(Icon>|Repository>|Registry>)).*(991645|token|TOKEN|Token|PASSWORD|Password|password)(?:(?!(\*\*\*\*\*\*|/>)).)*$' | rg '>.*<'

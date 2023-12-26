@@ -17,7 +17,7 @@ https://hub.docker.com/r/p3terx/ariang/</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:6880]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/ariang.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/ariang.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

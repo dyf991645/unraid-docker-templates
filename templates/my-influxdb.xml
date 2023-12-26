@@ -13,7 +13,7 @@
   <Category>Network:Management Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:8086]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/atribe/unRAID-docker/master/influxdb.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/influxdb.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/influxdb.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

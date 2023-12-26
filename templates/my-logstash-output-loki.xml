@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>logstash-output-loki</Name>
-  <Repository>******/logstash-output-loki</Repository>
+  <Repository>dyf991645/logstash-output-loki</Repository>
   <Registry/>
   <Network>bridge</Network>
   <MyIP/>
@@ -13,7 +13,7 @@
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/logstash.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/logstash.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
