@@ -17,11 +17,11 @@ https://hub.docker.com/r/jaegertracing/all-in-one/</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:16686]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/jaeger.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/******/unraid-docker-templates/main/icons/jaeger.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1703216051</DateInstalled>
+  <DateInstalled>1703224653</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

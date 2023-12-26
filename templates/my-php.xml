@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>php</Name>
+  <Repository>php:cli</Repository>
+  <Registry>https://hub.docker.com/_/php/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/_/php/</Support>
+  <Project/>
+  <Overview>While designed for web development, the PHP scripting language also provides general-purpose use.&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/_/php/</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs>php -S 0.0.0.0:80 -t /root/scripts</PostArgs>
+  <CPUset/>
+  <DateInstalled>1703240924</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="scripts" Target="/root/scripts" Default="/mnt/user/appdata/scripts" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/php</Config>
+  <Config Name="port" Target="80" Default="8083" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8083</Config>
+</Container>
