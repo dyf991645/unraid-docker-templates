@@ -17,14 +17,15 @@ https://hub.docker.com/_/php/</Overview>
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/php.png</Icon>
   <ExtraParams/>
   <PostArgs>php -S 0.0.0.0:80 -t /root/scripts</PostArgs>
   <CPUset/>
-  <DateInstalled>1703240924</DateInstalled>
+  <DateInstalled>1705056789</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="scripts" Target="/root/scripts" Default="/mnt/user/appdata/scripts" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/php</Config>
   <Config Name="port" Target="80" Default="8083" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8083</Config>
+  <Config Name="traefik.http.routers.php.middlewares" Target="traefik.http.routers.php.middlewares" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">authBasic@file</Config>
 </Container>
