@@ -17,11 +17,11 @@ https://hub.docker.com/_/php/</Overview>
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/php.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/php.png</Icon>
   <ExtraParams/>
   <PostArgs>php -S 0.0.0.0:80 -t /root/scripts</PostArgs>
   <CPUset/>
-  <DateInstalled>1705056789</DateInstalled>
+  <DateInstalled>1705056993</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
