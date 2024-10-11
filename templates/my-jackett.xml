@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.1"?>
 <Container version="2">
   <Name>jackett</Name>
   <Repository>lscr.io/linuxserver/jackett</Repository>
