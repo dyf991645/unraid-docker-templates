@@ -20,7 +20,7 @@ GitHub&#xFF1A;https://github.com/SuperNG6/Docker-qBittorrent</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702373210</DateInstalled>
+  <DateInstalled>1723028630</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -34,4 +34,5 @@ GitHub&#xFF1A;https://github.com/SuperNG6/Docker-qBittorrent</Overview>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="traefik.enable" Target="traefik.enable" Default="true" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="traefik.http.services.qbittorrent.loadbalancer.server.port" Target="traefik.http.services.qbittorrent.loadbalancer.server.port" Default="8080" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="traefik.docker.network" Target="traefik.docker.network" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">br0</Config>
 </Container>

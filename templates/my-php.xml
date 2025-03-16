@@ -21,11 +21,12 @@ https://hub.docker.com/_/php/</Overview>
   <ExtraParams/>
   <PostArgs>php -S 0.0.0.0:80 -t /root/scripts</PostArgs>
   <CPUset/>
-  <DateInstalled>1705056993</DateInstalled>
+  <DateInstalled>1710208013</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="scripts" Target="/root/scripts" Default="/mnt/user/appdata/scripts" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/php</Config>
   <Config Name="port" Target="80" Default="8083" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8083</Config>
   <Config Name="traefik.http.routers.php.middlewares" Target="traefik.http.routers.php.middlewares" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">authBasic@file</Config>
+  <Config Name="data" Target="/data" Default="/mnt/user" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user</Config>
 </Container>

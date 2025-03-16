@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702534444</DateInstalled>
+  <DateInstalled>1723028661</DateInstalled>
   <DonateText>Donations</DonateText>
   <DonateLink>https://www.linuxserver.io/donate</DonateLink>
   <Requires/>
@@ -32,6 +32,7 @@
   <Config Name="USER" Target="USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="PASS" Target="PASS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="traefik.http.routers.transmission.middlewares" Target="traefik.http.routers.transmission.middlewares" Default="auth@file" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">auth@file</Config>
+  <Config Name="traefik.docker.network" Target="traefik.docker.network" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">br0</Config>
   <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/transmission" Mode="rw" Description="Where transmission should store config files and logs." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/transmission</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">1000</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>

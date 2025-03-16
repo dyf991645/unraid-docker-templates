@@ -14,10 +14,10 @@
   <WebUI>http://[IP]:[PORT:17170]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/lewislarsen/lldap-unraid/master/lldap.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/ldap.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702434097</DateInstalled>
+  <DateInstalled>1706089098</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

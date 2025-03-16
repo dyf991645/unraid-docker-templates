@@ -14,10 +14,10 @@
   <WebUI>http://[IP]:[PORT:9091]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/authelia/authelia.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/authelia/authelia.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1693993920</DateInstalled>
+  <DateInstalled>1706089126</DateInstalled>
   <DonateText>Help support our work by buying us a beer</DonateText>
   <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Requires/>
