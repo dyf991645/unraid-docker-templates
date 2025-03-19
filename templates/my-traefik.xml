@@ -22,10 +22,10 @@ https://discord.gg/VWAG7rZ</Overview>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/traefik/traefik.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/icons/traefik.png</Icon>
-  <ExtraParams>--add-host=host.docker.internal:172.17.0.1</ExtraParams>
+  <ExtraParams>--add-host=host.docker.internal:172.17.0.1 --restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702455114</DateInstalled>
+  <DateInstalled>1742388228</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -39,4 +39,5 @@ https://discord.gg/VWAG7rZ</Overview>
   <Config Name="Traefik API" Target="traefik.http.routers.api.service" Default="api@internal " Mode="" Description="Routing Traefik to its API Dashboard" Type="Label" Display="always" Required="false" Mask="false">api@internal</Config>
   <Config Name="Enable Traefik (Dashboard)" Target="traefik.enable" Default="true" Mode="" Description="Enable/Disable Traefik Dashboard" Type="Label" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="traefik.http.routers.api.middlewares" Target="traefik.http.routers.api.middlewares" Default="auth@file" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">auth@file</Config>
+  <TailscaleStateDir/>
 </Container>

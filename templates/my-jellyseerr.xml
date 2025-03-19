@@ -14,10 +14,10 @@
   <WebUI>http://[IP]:[PORT:5055]</WebUI>
   <TemplateURL/>
   <Icon>https://hotio.dev/webhook-avatars/jellyseerr.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1692888373</DateInstalled>
+  <DateInstalled>1742389456</DateInstalled>
   <DonateText>You can become a GitHub sponsor, use Open Collective or send some Crypto...</DonateText>
   <DonateLink>https://hotio.dev/donate</DonateLink>
   <Requires/>
@@ -26,4 +26,5 @@
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">002</Config>
+  <TailscaleStateDir/>
 </Container>

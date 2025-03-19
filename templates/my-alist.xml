@@ -16,14 +16,15 @@ Important: Initial password in the log.</Overview>
   <WebUI>http://[IP]:[PORT:5244]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/MyFaith/unraid-templates/master/alist/alist.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xushier/HD-Icons/main/border-radius/Alist_A.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1692952873</DateInstalled>
+  <DateInstalled>1742391680</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Web UI Port" Target="5244" Default="5244" Mode="tcp" Description="Web UI Port: 5244" Type="Port" Display="always" Required="false" Mask="false">5244</Config>
   <Config Name="Data Path" Target="/mnt/data" Default="" Mode="rw" Description="Mount at /mnt/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
   <Config Name="Data Path" Target="/opt/alist/data" Default="" Mode="rw" Description="Appdata Path" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/alist</Config>
+  <TailscaleStateDir/>
 </Container>

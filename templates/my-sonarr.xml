@@ -14,10 +14,10 @@
   <WebUI>http://[IP]:[PORT:8989]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/sonarr.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sonarr-logo.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1693475520</DateInstalled>
+  <DateInstalled>1742389969</DateInstalled>
   <DonateText>Donations</DonateText>
   <DonateLink>https://www.linuxserver.io/donate</DonateLink>
   <Requires/>
@@ -28,4 +28,5 @@
   <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">1000</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+  <TailscaleStateDir/>
 </Container>

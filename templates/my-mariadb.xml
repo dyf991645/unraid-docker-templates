@@ -25,10 +25,10 @@ docker exec -i MariaDB-Official sh -c 'exec mysql -uroot -p"YOUR_ROOT_PASSWORD"'
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/mgutt/unraid-docker-templates/master/mgutt/MariaDB-Official.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/mariadb.png</Icon>
-  <ExtraParams>--user=99:100 --memory=2G</ExtraParams>
+  <ExtraParams>--user=99:100 --memory=2G --restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702433087</DateInstalled>
+  <DateInstalled>1742388532</DateInstalled>
   <DonateText>If you like my work please </DonateText>
   <DonateLink>http://paypal.me/marcgutt</DonateLink>
   <Requires/>
@@ -41,4 +41,5 @@ docker exec -i MariaDB-Official sh -c 'exec mysql -uroot -p"YOUR_ROOT_PASSWORD"'
   <Config Name="Config" Target="/etc/mysql/conf.d" Default="" Mode="rw" Description="" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/mariadb/config</Config>
   <Config Name="traefik.enable" Target="traefik.enable" Default="false" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="Root Password" Target="MARIADB_ROOT_PASSWORD" Default="" Mode="" Description="Generate Random Password must be empty if you like to set your own Root Password!" Type="Variable" Display="advanced-hide" Required="false" Mask="true">******</Config>
+  <TailscaleStateDir/>
 </Container>

@@ -18,13 +18,14 @@ https://hub.docker.com/r/whyour/qinglong/</Overview>
   <WebUI>http://[IP]:[PORT:15700]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/qinglong.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702022543</DateInstalled>
+  <DateInstalled>1742391391</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="http" Target="5700" Default="5700" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">15700</Config>
   <Config Name="data" Target="/ql/data" Default="/mnt/user/appdata/qinglong" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qinglong</Config>
+  <TailscaleStateDir/>
 </Container>

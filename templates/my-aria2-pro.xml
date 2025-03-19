@@ -31,10 +31,10 @@ License&#xD;
   <WebUI>http://ariang.mayswind.net/latest/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/justin-himself/unraid-templates/master/aria2-pro/aria2-pro.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/aria2-pro.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1723028690</DateInstalled>
+  <DateInstalled>1742389082</DateInstalled>
   <DonateText>You are rich huh? Help people in need!</DonateText>
   <DonateLink>https://bit.ly/3zAjqUx</DonateLink>
   <Requires>Additional WEBUI is required, read the README for details.</Requires>
@@ -50,4 +50,5 @@ License&#xD;
   <Config Name="IPV6_MODE" Target="IPV6_MODE" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="traefik.http.services.aria2-pro.loadbalancer.server.port" Target="traefik.http.services.aria2-pro.loadbalancer.server.port" Default="6800" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">6800</Config>
   <Config Name="traefik.docker.network" Target="traefik.docker.network" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">br0</Config>
+  <TailscaleStateDir/>
 </Container>

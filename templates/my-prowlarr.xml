@@ -15,9 +15,9 @@
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/prowlarr.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-logo.png</Icon>
   <ExtraParams/>
-  <PostArgs/>
+  <PostArgs>--restart unless-stopped</PostArgs>
   <CPUset/>
-  <DateInstalled>1693189558</DateInstalled>
+  <DateInstalled>1742389820</DateInstalled>
   <DonateText>Donations</DonateText>
   <DonateLink>https://www.linuxserver.io/donate</DonateLink>
   <Requires/>
@@ -26,4 +26,5 @@
   <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+  <TailscaleStateDir/>
 </Container>

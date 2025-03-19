@@ -14,10 +14,10 @@
   <WebUI>http://[IP]:[PORT:8086]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/atribe/unRAID-docker/master/influxdb.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/influxdb.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1687605463</DateInstalled>
+  <DateInstalled>1742388459</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -27,4 +27,5 @@
   <Config Name="Host Path 3" Target="/etc/influxdb2/config.yaml" Default="/mnt/user/appdata/influxdb/config.yaml" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/influxdb/config.yaml</Config>
   <Config Name="INFLUXD_CONFIG_PATH" Target="INFLUXD_CONFIG_PATH" Default="/etc/influxdb2" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/etc/influxdb2</Config>
   <Config Name="INFLUX_CONFIGS_PATH" Target="INFLUX_CONFIGS_PATH" Default="/etc/influxdb2/influx-configs" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/etc/influxdb2/influx-configs</Config>
+  <TailscaleStateDir/>
 </Container>

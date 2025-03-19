@@ -14,10 +14,10 @@
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/baidu-netdisk.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1703212566</DateInstalled>
+  <DateInstalled>1742389227</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -29,4 +29,5 @@
   <Config Name="USER_ID" Target="USER_ID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="GROUP_ID" Target="100" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="traefik.http.routers.baidu-netdisk.middlewares" Target="traefik.http.routers.baidu-netdisk.middlewares" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false"/>
+  <TailscaleStateDir/>
 </Container>

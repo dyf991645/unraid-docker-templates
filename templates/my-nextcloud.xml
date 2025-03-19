@@ -16,10 +16,10 @@
   <WebUI>http://[IP]:[PORT:8081]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/maschhoff/docker/master/unraid%20xml/my-nextcloud.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/nextcloud.png</Icon>
-  <ExtraParams>--user 99</ExtraParams>
+  <ExtraParams>--user 99 --restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702630125</DateInstalled>
+  <DateInstalled>1742391445</DateInstalled>
   <DonateText>Please buy me a Pizza</DonateText>
   <DonateLink>https://www.buymeacoffee.com/maschhoff</DonateLink>
   <Requires/>
@@ -30,4 +30,5 @@
   <Config Name="Host Path 5" Target="/mnt/Share" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nextcloud/share</Config>
   <Config Name="http" Target="80" Default="11080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8081</Config>
   <Config Name="traefik.http.routers.nextcloud.middlewares" Target="traefik.http.routers.nextcloud.middlewares" Default="nextcloudHeader@file" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">nextcloud@file</Config>
+  <TailscaleStateDir/>
 </Container>

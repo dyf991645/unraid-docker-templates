@@ -14,14 +14,15 @@
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/juusujanar/unraid-templates/master/Redis.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/juusujanar/unraid-templates/master/img/Redis-logo.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702433066</DateInstalled>
+  <DateInstalled>1742388579</DateInstalled>
   <DonateText>If you like my work and want to buy me a beer, feel free.</DonateText>
   <DonateLink>https://www.paypal.me/jj9987</DonateLink>
   <Requires/>
   <Config Name="Redis Port" Target="6379" Default="6379" Mode="tcp" Description="This is Redis default connection port." Type="Port" Display="always-hide" Required="true" Mask="{8}">6379</Config>
   <Config Name="data" Target="/data" Default="/mnt/user/appdata/redis/data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/redis/data</Config>
   <Config Name="traefik.enable" Target="traefik.enable" Default="false" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">false</Config>
+  <TailscaleStateDir/>
 </Container>

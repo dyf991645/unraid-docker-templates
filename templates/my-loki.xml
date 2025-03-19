@@ -18,10 +18,10 @@ Will need to be placed into your Host Path 1 directory.</Overview>
   <WebUI>http://[IP]:[PORT:3100]/metrics</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/natcoso9955/unRAID-docker/master/grafana_loki_unraid.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/loki.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702375755</DateInstalled>
+  <DateInstalled>1742389014</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -29,4 +29,5 @@ Will need to be placed into your Host Path 1 directory.</Overview>
   <Config Name="Host Path 1" Target="/etc/loki" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/loki/conf/</Config>
   <Config Name="Host Path 2" Target="/loki" Default="/mnt/user/appdata/loki/data/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/loki/data/</Config>
   <Config Name="traefik.enable" Target="traefik.enable" Default="false" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">false</Config>
+  <TailscaleStateDir/>
 </Container>

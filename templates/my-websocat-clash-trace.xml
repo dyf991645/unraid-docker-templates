@@ -18,14 +18,15 @@ Will need to be placed into your Host Path 1 directory.</Overview>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/natcoso9955/unRAID-docker/master/grafana_loki_unraid.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/websocat.jpg</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1720073212</DateInstalled>
+  <DateInstalled>1742388650</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="PROXY_FROM" Target="PROXY_FROM" Default="ws://192.168.31.102:9090/traffic?token=123456" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">ws://192.168.31.102:9090/profile/tracing?token=******</Config>
   <Config Name="PROXY_TO" Target="PROXY_TO" Default="172.17.0.1:9000" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">172.17.0.1:9000</Config>
   <Config Name="traefik.enable" Target="traefik.enable" Default="false" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">false</Config>
+  <TailscaleStateDir/>
 </Container>

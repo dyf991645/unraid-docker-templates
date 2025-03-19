@@ -18,14 +18,15 @@ https://hub.docker.com/r/p3terx/ariang/</Overview>
   <WebUI>http://[IP]:[PORT:6880]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/ariang.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702532558</DateInstalled>
+  <DateInstalled>1742389176</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Container Port 1" Target="6880" Default="6880" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6880</Config>
   <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="traefik.http.routers.ariang.middlewares" Target="traefik.http.routers.ariang.middlewares" Default="auth@file" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">auth@file</Config>
+  <TailscaleStateDir/>
 </Container>
