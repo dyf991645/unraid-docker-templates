@@ -14,10 +14,10 @@
   <WebUI>http://[IP]:[PORT:9696]/system/status</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/prowlarr.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-logo.png</Icon>
-  <ExtraParams/>
-  <PostArgs>--restart unless-stopped</PostArgs>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
   <CPUset/>
-  <DateInstalled>1742389820</DateInstalled>
+  <DateInstalled>1743603646</DateInstalled>
   <DonateText>Donations</DonateText>
   <DonateLink>https://www.linuxserver.io/donate</DonateLink>
   <Requires/>
