@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>jellyfin</Name>
-  <Repository>jellyfin/jellyfin:latest</Repository>
+  <Repository>jellyfin/jellyfin</Repository>
   <Registry>https://hub.docker.com/r/jellyfin/jellyfin/</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -39,7 +39,7 @@
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702371089</DateInstalled>
+  <DateInstalled>1749036965</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -47,5 +47,6 @@
   <Config Name="Host Path 1" Target="/config" Default="/mnt/user/appdata/jellyfin" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jellyfin</Config>
   <Config Name="Host Path 2" Target="/media" Default="/mnt/user" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/</Config>
   <Config Name="Host Path 3" Target="/cache" Default="/mnt/user/appdata/jellyfin/cache/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jellyfin/cache/</Config>
-  <Config Name="gpu" Target="" Default="" Mode="" Description="" Type="Device" Display="always" Required="false" Mask="false">/dev/dri/</Config>
+  <Config Name="gpu" Target="/dev/dri/" Default="" Mode="" Description="" Type="Device" Display="always" Required="false" Mask="false">/dev/dri/</Config>
+  <TailscaleStateDir/>
 </Container>

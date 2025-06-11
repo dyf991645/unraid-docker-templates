@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702534943</DateInstalled>
+  <DateInstalled>1749526907</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -28,4 +28,5 @@
   <Config Name="traefik.enable" Target="traefik.enable" Default="true" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="traefik.http.routers.redis-insight.entryPoints" Target="traefik.http.routers.redis-insight.entryPoints" Default="web" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">websecure</Config>
   <Config Name="traefik.http.routers.redis-insight.middlewares" Target="traefik.http.routers.redis-insight.middlewares" Default="auth@file" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">auth@file</Config>
+  <TailscaleStateDir/>
 </Container>
