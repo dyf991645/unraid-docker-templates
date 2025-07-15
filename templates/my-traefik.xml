@@ -25,14 +25,14 @@ https://discord.gg/VWAG7rZ</Overview>
   <ExtraParams>--add-host=host.docker.internal:172.17.0.1 --restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1742388228</DateInstalled>
+  <DateInstalled>1749651520</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Config Folder" Target="/etc/traefik" Default="/mnt/user/appdata/traefik" Mode="rw" Description="Appdata Location" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/traefik</Config>
   <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="The default is /var/run/docker.sock&#13;&#10;" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
   <Config Name="https Port" Target="10443" Default="10443" Mode="tcp" Description="HTTPS Port" Type="Port" Display="always" Required="false" Mask="false">10443</Config>
-  <Config Name="http Port" Target="10080" Default="10080" Mode="tcp" Description="HTTP Port" Type="Port" Display="always" Required="false" Mask="false">10080</Config>
+  <Config Name="http Port" Target="10080" Default="10080" Mode="tcp" Description="HTTP Port" Type="Port" Display="always" Required="false" Mask="false">10081</Config>
   <Config Name="Web UI Port" Target="8080" Default="8183" Mode="tcp" Description="Dashboard WebUI Port" Type="Port" Display="always" Required="false" Mask="false">8183</Config>
   <Config Name="Cloudflare API Token" Target="CF_DNS_API_TOKEN" Default="YOUR_SUPER_SECURE_CLOUDFLARE_API_TOKEN" Mode="" Description="Cloudflare DNS API Token" Type="Variable" Display="always" Required="false" Mask="false">******</Config>
   <Config Name="Traefik Dashboard Subdomain" Target="traefik.http.routers.api.rule" Default="Host(`traefik.YOURDOMAIN.COM`)" Mode="" Description="Traefik dashboard URL" Type="Label" Display="always" Required="false" Mask="false">Host(`traefik.home.wirerope.fun`)</Config>

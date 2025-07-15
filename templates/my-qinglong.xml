@@ -21,7 +21,7 @@ https://hub.docker.com/r/whyour/qinglong/</Overview>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1742391391</DateInstalled>
+  <DateInstalled>1749718077</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

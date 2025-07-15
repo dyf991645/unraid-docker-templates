@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>quark-auto-save</Name>
+  <Repository>cp0204/quark-auto-save:latest</Repository>
+  <Registry>https://github.com/Cp0204/quark-auto-save</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Cp0204/quark-auto-save/main/img/icon.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1749695060</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="web-ui" Target="5005" Default="5005" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5005</Config>
+  <Config Name="WEBUI_USERNAME" Target="WEBUI_USERNAME" Default="admin" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="WEBUI_PASSWORD" Target="WEBUI_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">******</Config>
+  <Config Name="PLUGIN_FLAGS" Target="PLUGIN_FLAGS" Default="" Mode="" Description="&#x63D2;&#x4EF6;&#x6807;&#x5FD7;&#xFF0C;&#x5982; -emby,-aria2 &#x7981;&#x7528;&#x67D0;&#x4E9B;&#x63D2;&#x4EF6;" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <TailscaleStateDir/>
+</Container>

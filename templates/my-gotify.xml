@@ -17,13 +17,13 @@ Password: admin&#xD;
 &#xD;
 Download config.ymlmkdir -p /mnt/user/appdata/gotify/config/wget -O /mnt/user/appdata/gotify/config/config.yml https://raw.githubusercontent.com/gotify/server/master/config.example.yml</Overview>
   <Category>Productivity: Tools:Utilities Network:Messenger</Category>
-  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <WebUI>http://[IP]:[PORT:8070]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/gotify.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gotify.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1694071975</DateInstalled>
+  <DateInstalled>1749693952</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -31,4 +31,5 @@ Download config.ymlmkdir -p /mnt/user/appdata/gotify/config/wget -O /mnt/user/ap
   <Config Name="Path 1" Target="/app/data" Default="/mnt/user/appdata/gotify/" Mode="rw" Description="/app/data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/gotify/</Config>
   <Config Name="Path 2" Target="/etc/gotify" Default="" Mode="rw" Description="/etc/gotify" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/gotify/config/</Config>
   <Config Name="Default User Password" Target="GOTIFY_DEFAULTUSER_PASS" Default="admin" Mode="" Description="Default User Password" Type="Variable" Display="always" Required="false" Mask="false">******</Config>
+  <TailscaleStateDir/>
 </Container>
