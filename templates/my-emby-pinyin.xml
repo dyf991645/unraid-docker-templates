@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1693821262</DateInstalled>
+  <DateInstalled>1754487866</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -28,4 +28,5 @@
   <Config Name="API_KEY" Target="API_KEY" Default="JELLYFIN_KEY" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">8a581f1fd350410ca443a3e4b3a07d5d</Config>
   <Config Name="SORT_TYPE" Target="SORT_TYPE" Default="1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">4</Config>
   <Config Name="WEBHOOK_PORT" Target="80" Default="8083" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8083</Config>
+  <TailscaleStateDir/>
 </Container>
