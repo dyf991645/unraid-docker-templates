@@ -17,7 +17,7 @@
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1742389227</DateInstalled>
+  <DateInstalled>1762959290</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -29,5 +29,6 @@
   <Config Name="USER_ID" Target="USER_ID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="GROUP_ID" Target="100" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="traefik.http.routers.baidu-netdisk.middlewares" Target="traefik.http.routers.baidu-netdisk.middlewares" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false"/>
+  <Config Name="ENABLE_DISABLE_GPU" Target="ENABLE_DISABLE_GPU" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <TailscaleStateDir/>
 </Container>

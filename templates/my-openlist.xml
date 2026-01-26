@@ -9,17 +9,17 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/Xhofe/alist/issues</Support>
   <Project>https://github.com/Xhofe/alist</Project>
-  <Overview>A file list program that supports multiple storage, and supports web browsing and webdav, powered by gin and React. English documents are translated using Google.You can click the Edit this page button below to help improve the translation&#xD;
-&#xD;
+  <Overview>A file list program that supports multiple storage, and supports web browsing and webdav, powered by gin and React. English documents are translated using Google.You can click the Edit this page button below to help improve the translation&#13;
+&#13;
 Important: Initial password in the log.</Overview>
   <Category>Cloud: Network:Web</Category>
   <WebUI>http://[IP]:[PORT:5244]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/MyFaith/unraid-templates/master/alist/alist.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xushier/HD-Icons/refs/heads/main/border-radius/Openlist_A.png</Icon>
-  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <ExtraParams>--restart unless-stopped --user 99:100</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1751384774</DateInstalled>
+  <DateInstalled>1766586788</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

@@ -20,12 +20,12 @@ GitHub&#xFF1A;https://github.com/SuperNG6/Docker-qBittorrent</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1723028630</DateInstalled>
+  <DateInstalled>1754575793</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Container Path 1" Target="/config" Default="/mnt/user/appdata/qbittorrentee" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qbittorrent</Config>
-  <Config Name="Container Path 2" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/download/qbittorrent</Config>
+  <Config Name="Container Path 2" Target="/media/download" Default="/mnt/user/media/download" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/media/download</Config>
   <Config Name="Container Port 1" Target="6881" Default="6881" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6881</Config>
   <Config Name="Container Port 2" Target="6881" Default="6881" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">6881</Config>
   <Config Name="Container Port 3" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
@@ -35,4 +35,5 @@ GitHub&#xFF1A;https://github.com/SuperNG6/Docker-qBittorrent</Overview>
   <Config Name="traefik.enable" Target="traefik.enable" Default="true" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="traefik.http.services.qbittorrent.loadbalancer.server.port" Target="traefik.http.services.qbittorrent.loadbalancer.server.port" Default="8080" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">8080</Config>
   <Config Name="traefik.docker.network" Target="traefik.docker.network" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">br0</Config>
+  <TailscaleStateDir/>
 </Container>
