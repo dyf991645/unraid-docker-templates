@@ -1,34 +1,65 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
-set -e
+set -euo pipefail
 
-cd ${0:A:h}
-
-if [[ ! -f .env ]]; then
-    echo "replacement info missed"
-    return
-fi
-export $(grep -v '^#' .env | xargs)
-
-ssh_conn="unraid.home"
-src="/boot/config/plugins/dockerMan/templates-user"
-from=${ssh_conn}:${src}/*
-echo from: ${from}
-to=$(pwd)/templates/
-echo to: ${to}
-
-if [[ ! -d ${to} ]];then
-    mkdir ${to}
-fi
-
-rsync -avzP --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r "${from}" "${to}"
-
-replacement=(${(s/|/)replacement})
-for item in "${replacement[@]}"
-do
-    sed -i '' "s|$item</Config>|******</Config>|g" templates/*.xml
+for cmd in rclone rg sed mktemp; do
+    if ! command -v "$cmd" >/dev/null 2>&1; then
+        echo "required command '$cmd' not found; please install it"
+        exit 1
+    fi
 done
 
-rg -i --pcre2 '^\s*<(?!(icon>|repository>|registry>)).*(991645|token|password)(?:(?!(\*\*\*\*\*\*|/>)).)*$'
+rclone copy unraid:/boot/config/plugins/dockerMan/templates-user templates \
+    --combined "sync.result" \
+    --config sync.config \
+    --progress
 
-rg -i --pcre2 '^\s*<(?!(icon>|repository>|registry>)).*(991645|token|password)(?:(?!(\*\*\*\*\*\*|/>)).)*$' | rg '>.*<'
+diff_output=$(grep -v "^=" sync.result || true)
+if [ -n "$diff_output" ]; then
+    echo_section "difference: $(echo "$diff_output" | wc -l)"
+    echo "$diff_output"
+else
+    echo_section "no difference"
+fi
+
+
+if [[ ! -f .env ]]; then
+    echo_red "Error: .env file missed"
+    exit 1
+fi
+source .env
+
+if [[ -z "${replacement-}" ]]; then
+    echo_red "Error: replacement variable not found in .env"
+    exit 1
+fi
+
+local -a items=("${(s/|/)replacement}")
+
+if (( ${#items} > 0 )); then
+    echo_section "starting Securing Process..."
+    
+    local -a sed_args=()
+    for item in "${items[@]}"; do
+        local escaped=${item//\\/\\\\}
+        escaped=${escaped//|/\\|}
+        escaped=${escaped//\//\\\/}
+        escaped=${escaped//&/\\&}
+
+        sed_args+=("-e" "s|${escaped}</Config>|******</Config>|g")
+    done
+
+    local sed_cmd=(sed -i)
+    [[ "$OSTYPE" == darwin* ]] && sed_cmd=(sed -i '')
+
+    find templates -name "*.xml" -exec "${sed_cmd[@]}" "${sed_args[@]}" {} +
+fi
+
+echo_section "security Audit Report"
+local audit_pattern='^\s*<(?!(icon>|repository>|registry>)).*(991645|token|password)(?:(?!(\*\*\*\*\*\*|/>)).)*$'
+
+if rg -q -i --pcre2 "$audit_pattern" templates/; then
+    rg -i --pcre2 "$audit_pattern" templates/ | rg --color=always '>.*<' || true
+else
+    echo "✅ Audit Clean: No sensitive data exposed."
+fi
