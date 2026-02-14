@@ -9,15 +9,16 @@
   <Privileged>false</Privileged>
   <Support>https://hotio.dev/discord</Support>
   <Project>https://hotio.dev/containers/jellyseerr</Project>
+  <ReadMe/>
   <Overview>Request management and media discovery tool for the Jellyfin ecosystem first.</Overview>
   <Category>Downloaders: MediaApp:Other</Category>
   <WebUI>http://[IP]:[PORT:5055]</WebUI>
   <TemplateURL/>
-  <Icon>https://hotio.dev/webhook-avatars/jellyseerr.png</Icon>
+  <Icon>https://raw.githubusercontent.com/xushier/HD-Icons/main/border-radius/jellyseerr-1.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1742389456</DateInstalled>
+  <DateInstalled>1771072891</DateInstalled>
   <DonateText>You can become a GitHub sponsor, use Open Collective or send some Crypto...</DonateText>
   <DonateLink>https://hotio.dev/donate</DonateLink>
   <Requires/>

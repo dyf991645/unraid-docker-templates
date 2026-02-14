@@ -9,15 +9,16 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project/>
+  <ReadMe/>
   <Overview/>
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/jellyfin-0.png</Icon>
+  <Icon>https://raw.githubusercontent.com/xushier/HD-Icons/main/border-radius/jellyfin-2.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1754488001</DateInstalled>
+  <DateInstalled>1771073024</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

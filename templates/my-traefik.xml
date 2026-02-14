@@ -9,23 +9,24 @@
   <Privileged>false</Privileged>
   <Support>https://discord.gg/VWAG7rZ</Support>
   <Project>https://traefik.io/</Project>
-  <Overview>The world&#x2019;s most popular cloud-native application proxy that helps developers and operations teams build, deploy and run modern microservices applications quickly and easily.&#xD;
-&#xD;
-For a guide on how to install this reverse proxy, head over to our documentation website.&#xD;
-&#xD;
-https://docs.ibracorp.io&#xD;
-&#xD;
-Come join in on the community fun and get support by joining our discord!&#xD;
-&#xD;
+  <ReadMe/>
+  <Overview>The world&#x2019;s most popular cloud-native application proxy that helps developers and operations teams build, deploy and run modern microservices applications quickly and easily.&#13;
+&#13;
+For a guide on how to install this reverse proxy, head over to our documentation website.&#13;
+&#13;
+https://docs.ibracorp.io&#13;
+&#13;
+Come join in on the community fun and get support by joining our discord!&#13;
+&#13;
 https://discord.gg/VWAG7rZ</Overview>
   <Category>Productivity: Security: Tools:Utilities Network:Proxy</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/traefik/traefik.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/icons/traefik.png</Icon>
+  <Icon>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/traefik/traefik.png</Icon>
   <ExtraParams>--add-host=host.docker.internal:172.17.0.1 --restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1749651520</DateInstalled>
+  <DateInstalled>1771071995</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
