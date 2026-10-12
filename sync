@@ -9,7 +9,7 @@ for cmd in rclone rg sed mktemp; do
     fi
 done
 
-rclone sync unraid:/boot/config/plugins/dockerMan/templates-user templates \
+rclone copy unraid:/boot/config/plugins/dockerMan/templates-user templates \
     --combined "sync.result" \
     --config sync.config \
     --progress
