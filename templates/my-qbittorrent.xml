@@ -9,18 +9,19 @@
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/superng6/qbittorrentee/</Support>
   <Project/>
-  <Overview>Docker qBittorrent &#x4E2D;&#x56FD;&#x4F18;&#x5316;&#x7248;&#xD;
-&#x535A;&#x5BA2;&#xFF1A;https://sleele.com/2020/04/09/docker-qbittorrent-optimizing&#xD;
-Docker Hub&#xFF1A;https://hub.docker.com/r/superng6/qbittorrent&#xD;
+  <ReadMe/>
+  <Overview>Docker qBittorrent &#x4E2D;&#x56FD;&#x4F18;&#x5316;&#x7248;&#13;
+&#x535A;&#x5BA2;&#xFF1A;https://sleele.com/2020/04/09/docker-qbittorrent-optimizing&#13;
+Docker Hub&#xFF1A;https://hub.docker.com/r/superng6/qbittorrent&#13;
 GitHub&#xFF1A;https://github.com/SuperNG6/Docker-qBittorrent</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/xushier/HD-Icons/main/border-radius/Qbittorrent_A.png</Icon>
+  <Icon>https://raw.githubusercontent.com/xushier/HD-Icons/main/border-radius/qbittorrent-1.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1754575793</DateInstalled>
+  <DateInstalled>1782223279</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

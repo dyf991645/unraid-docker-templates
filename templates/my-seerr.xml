@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>seerr</Name>
+  <Repository>ghcr.io/seerr-team/seerr:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <MyMAC/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <ReadMe/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5055]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/seerr-team/seerr/develop/public/android-chrome-512x512.png</Icon>
+  <ExtraParams>--init --restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1789530568</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="5055" Default="5055" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5055</Config>
+  <Config Name="config" Target="/app/config" Default="/mnt/user/appdata/seerr" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/seerr</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <TailscaleStateDir/>
+</Container>

@@ -1,36 +1,38 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>jellyfin</Name>
-  <Repository>jellyfin/jellyfin</Repository>
+  <Repository>jellyfin/jellyfin:12.0</Repository>
   <Registry>https://hub.docker.com/r/jellyfin/jellyfin/</Registry>
   <Network>bridge</Network>
   <MyIP/>
+  <MyMAC/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://www.reddit.com/r/jellyfin/</Support>
   <Project>https://jellyfin.media/</Project>
-  <Overview>&#xD;
-	Jellyfin is The Free Software Media Browser	Converted By Community Applications	Always verify this template (and values) against the dockerhub support page for the container!!&#xD;
-&#xD;
-&#xD;
-  You can add as many mount points as needed for recordings, movies ,etc. &#xD;
-&#xD;
-&#xD;
-  Directions:&#xD;
-&#xD;
-  /config : This is where Jellyfin will store it's databases and configuration.&#xD;
-&#xD;
-&#xD;
-  Port : This is the default port for Jellyfin. (Will add ssl port later)&#xD;
-&#xD;
-&#xD;
-  Media : This is the mounting point of your media. When you access it in Jellyfin it will be /media or whatever you chose for a mount point&#xD;
-&#xD;
-&#xD;
-  Cache : This is where Jellyfin will store and manage cached files like images to serve to clients. This is not where all images are stored.&#xD;
-&#xD;
-&#xD;
-  Tip: You can add more volume mappings if you wish Jellyfin has access to it.&#xD;
+  <ReadMe/>
+  <Overview>&#13;
+	Jellyfin is The Free Software Media Browser	Converted By Community Applications	Always verify this template (and values) against the dockerhub support page for the container!!&#13;
+&#13;
+&#13;
+  You can add as many mount points as needed for recordings, movies ,etc. &#13;
+&#13;
+&#13;
+  Directions:&#13;
+&#13;
+  /config : This is where Jellyfin will store it's databases and configuration.&#13;
+&#13;
+&#13;
+  Port : This is the default port for Jellyfin. (Will add ssl port later)&#13;
+&#13;
+&#13;
+  Media : This is the mounting point of your media. When you access it in Jellyfin it will be /media or whatever you chose for a mount point&#13;
+&#13;
+&#13;
+  Cache : This is where Jellyfin will store and manage cached files like images to serve to clients. This is not where all images are stored.&#13;
+&#13;
+&#13;
+  Tip: You can add more volume mappings if you wish Jellyfin has access to it.&#13;
   </Overview>
   <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <WebUI>http://[IP]:[PORT:8096]/</WebUI>
@@ -39,7 +41,7 @@
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1749036965</DateInstalled>
+  <DateInstalled>1790063774</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
