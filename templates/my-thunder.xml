@@ -3,8 +3,9 @@
   <Name>thunder</Name>
   <Repository>cnk3x/xunlei:beta</Repository>
   <Registry>https://hub.docker.com/r/cnk3x/xunlei/</Registry>
-  <Network>bridge</Network>
-  <MyIP/>
+  <Network>br0</Network>
+  <MyIP>192.168.31.114</MyIP>
+  <MyMAC>c2:75:bd:18:ab:0c</MyMAC>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
   <Support>https://hub.docker.com/r/cnk3x/xunlei/</Support>
@@ -23,7 +24,7 @@ https://hub.docker.com/r/cnk3x/xunlei/</Overview>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1771942647</DateInstalled>
+  <DateInstalled>1794193750</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -38,5 +39,7 @@ https://hub.docker.com/r/cnk3x/xunlei/</Overview>
   <Config Name="GID" Target="GID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="host" Target="host" Default="unraid-xunlei" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">unraid-xunlei</Config>
   <Config Name="traefik.http.routers.thunder.middlewares" Target="traefik.http.routers.thunder.middlewares" Default="auth@file" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">auth@file</Config>
+  <Config Name="traefik.http.services.aria2-pro.loadbalancer.server.port" Target="traefik.http.services.aria2-pro.loadbalancer.server.port" Default="2345" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">2345</Config>
+  <Config Name=" traefik.docker.network" Target=" traefik.docker.network" Default="br0" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">br0</Config>
   <TailscaleStateDir/>
 </Container>

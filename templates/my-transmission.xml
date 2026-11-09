@@ -5,10 +5,12 @@
   <Registry>https://github.com/orgs/linuxserver/packages/container/package/transmission</Registry>
   <Network>br0</Network>
   <MyIP>192.168.31.111</MyIP>
+  <MyMAC>02:42:c0:a8:1f:6f</MyMAC>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/linuxserver/docker-transmission/issues/new/choose</Support>
   <Project>https://www.transmissionbt.com/</Project>
+  <ReadMe/>
   <Overview>Transmission(https://www.transmissionbt.com/) is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, &#xB5;TP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:9091]</WebUI>
@@ -17,7 +19,7 @@
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1742389043</DateInstalled>
+  <DateInstalled>1794192610</DateInstalled>
   <DonateText>Donations</DonateText>
   <DonateLink>https://www.linuxserver.io/donate</DonateLink>
   <Requires/>
