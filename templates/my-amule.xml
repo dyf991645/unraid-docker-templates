@@ -3,12 +3,14 @@
   <Name>amule</Name>
   <Repository>ngosang/amule</Repository>
   <Registry>https://hub.docker.com/r/ngosang/amule</Registry>
-  <Network>bridge</Network>
-  <MyIP/>
+  <Network>br0</Network>
+  <MyIP>192.168.31.115</MyIP>
+  <MyMAC>0a:b2:12:98:13:06</MyMAC>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/ngosang/docker-amule</Support>
   <Project>https://www.amule.org/</Project>
+  <ReadMe/>
   <Overview>aMule is a free peer-to-peer file sharing utility that works with the eDonkey network and the Kad network, offering similar features to eMule and adding others such as GeoIP (country flags).</Overview>
   <Category>Downloaders:</Category>
   <WebUI>http://[IP]:[PORT:4711]</WebUI>
@@ -17,7 +19,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1702537837</DateInstalled>
+  <DateInstalled>1794797691</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -36,4 +38,5 @@
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
   <Config Name="MOD_FIX_KAD_GRAPH_ENABLE" Target="MOD_FIX_KAD_GRAPH_ENABLE" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
   <Config Name="MOD_FIX_KAD_BOOTSTRAP_ENABLED" Target="MOD_FIX_KAD_BOOTSTRAP_ENABLED" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <TailscaleStateDir/>
 </Container>

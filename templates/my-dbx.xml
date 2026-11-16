@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dbx</Name>
+  <Repository>t8y2/dbx</Repository>
+  <Registry>https://hub.docker.com/r/t8y2/dbx</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <MyMAC/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <ReadMe/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/dyf991645/unraid-docker-templates/main/icons/dbx.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1794568145</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="web" Target="4224" Default="4224" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4224</Config>
+  <Config Name="data" Target="/app/data" Default="/mnt/user/appdata/dbx" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dbx</Config>
+  <Config Name="DBX_PASSWORD" Target="DBX_PASSWORD" Default="password" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">******</Config>
+  <TailscaleStateDir/>
+</Container>
